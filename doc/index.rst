@@ -1,19 +1,32 @@
-.. Study Sphinx documentation master file, created by
-   sphinx-quickstart on Sat Jul 13 10:03:50 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+================================================================================
+Study Sphinx
+================================================================================
 
-Welcome to Study Sphinx's documentation!
-========================================
+.. list-table:: 記載環境
+   :header-rows: 1
+
+   * - ソフトウェア
+     - バージョン
+   * - Python
+     - 3.7.4 (64-bit)
+   * - Sphinx
+     - 2.1.2
+   * - TeX Live
+     - 2019
+   * - GnuWin32: Make
+     - 3.81
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :numbered:
+
+   setup/index
 
 
-
+================================================================================
 Indices and tables
-==================
+================================================================================
 
 * :ref:`genindex`
 * :ref:`modindex`
