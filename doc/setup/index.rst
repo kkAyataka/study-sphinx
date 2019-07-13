@@ -38,6 +38,15 @@ Sphinx環境の構築
   - サイズが大きく、インストールに時間がかかる
 
 
+日本語拡張の設定
+--------------------------------------------------------------------------------
+
+通常の設定では段落中で改行すると、改行部分にスペースが入る。
+日本語ドキュメントではこの動作は好ましくないため、 Sphinx-Users.jp_ で公開されている日本語拡張を入れる。
+
+https://sphinx-users.jp/reverse-dict/html/japanese.html を参考にファイルをダウンロードして、``conf.py`` を設定する。
+
+
 --------------------------------------------------------------------------------
 エディタ環境の構築
 --------------------------------------------------------------------------------
@@ -72,7 +81,9 @@ Visual Studio Codeを使用している。
 - Read the Docsテーマ: https://github.com/rtfd/sphinx_rtd_theme
 - Make for Windows: http://gnuwin32.sourceforge.net/packages/make.htm
 - TeX Live: https://www.tug.org/texlive/
+- Sphinx-Users.jp: https://sphinx-users.jp/index.html
 
 .. _Python公式サイト: https://www.python.org/
 .. _`Make for Windows`: http://gnuwin32.sourceforge.net/packages/make.htm
 .. _`TeX Live`: https://www.tug.org/texlive/
+.. _Sphinx-Users.jp: https://sphinx-users.jp/index.html
