@@ -3,3 +3,4 @@
 
 # Sphinx
 doc/_build
+doc/__pycache__
