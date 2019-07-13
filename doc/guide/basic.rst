@@ -61,7 +61,7 @@ htmlでのセクション番号の有効化
 ``toctree`` のオプションで ``:numbered:`` を指定して、有効化する。
 最上位のマスタードキュメントのみに設定すればよい。
 
-.. code-block::
+.. code-block:: rst
 
    .. toctree::
       :maxdepth: 2
