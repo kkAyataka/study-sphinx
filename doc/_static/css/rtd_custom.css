@@ -11,7 +11,7 @@ h1, h2, h3 {
 }
 
 /* 表は改行して表示する */
-.wy-table-responsive table > th,
-.wy-table-responsive table > td {
+.wy-table-responsive table th,
+.wy-table-responsive table td {
   white-space: normal;
 }
