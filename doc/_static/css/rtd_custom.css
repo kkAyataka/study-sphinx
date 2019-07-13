@@ -1,0 +1,17 @@
+@import url("theme.css");
+
+/* 横幅の指定を無くす */
+.wy-nav-content {
+  max-width: none;
+}
+
+/* h1～h3に下線を引く*/
+h1, h2, h3 {
+  border-bottom: 1px solid #2980B9
+}
+
+/* 表は改行して表示する */
+.wy-table-responsive table > th,
+.wy-table-responsive table > td {
+  white-space: normal;
+}
