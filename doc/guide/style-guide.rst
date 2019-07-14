@@ -230,6 +230,13 @@ CSVテーブル
           :language: rst
      - .. include:: style-sample/doc-dl-link.txt
 
+.. list-table:: ハイパーリンク
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/hyperlink.txt
+          :language: rst
+     - .. include:: style-sample/hyperlink.txt
 
 .. list-table:: インライン内部ターゲット
 
