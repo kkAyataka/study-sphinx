@@ -313,7 +313,6 @@ CSVテーブル
           :language: rst
      - .. include:: style-sample/footnote.txt
 
-dodcinfo
 
 用語集
 ================================================================================
@@ -325,13 +324,6 @@ dodcinfo
    * - .. literalinclude:: style-sample/glossary.txt
           :language: rst
      - .. include:: style-sample/glossary.txt
-
-オプションリスト
-置換
-
-用語集
-インクルード
-raw
 
 
 使用すると表現が増す構文
@@ -421,6 +413,35 @@ reST/Sphinxの構文的に補足する必要があったときとか。
 
    .. の後に続けて書くとコメント文章になる。
       改行しても、続きでコメントになる。
+
+
+インクルード
+--------------------------------------------------------------------------------
+
+.. code-block:: rst
+
+   .. include:: path_to_rst.txt
+
+   とするとreSTファイルとして解釈してページ内に挿入する。
+
+   .. literalinclude:: path_to_rst.txt
+      :language: rst
+
+   とするとファイルの内容をリテラルブロックとして、ページ内に挿入する。
+   オプションで取り込む行などを指定できるが、変更に追従するのが大変なので、
+   あまり使えないかも。
+
+
+raw
+--------------------------------------------------------------------------------
+
+.. list-table:: raw
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/raw.txt
+          :language: rst
+     - .. include:: style-sample/raw.txt
 
 
 参考リンク

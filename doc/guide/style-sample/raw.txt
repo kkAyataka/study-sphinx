@@ -1,0 +1,3 @@
+.. raw:: html
+
+   <div style="color: green">HTML等を直に埋め込めるみたいだけど、あまり使わなそう<div>
