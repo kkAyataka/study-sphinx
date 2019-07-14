@@ -1,5 +1,5 @@
 URL（ http://www.sphinx-doc.org/ ） は自動でハイパーリンクになる。
-emailも同じ。 kk.ayataka@gmail.com 。
+emailも同じ。 study@example.com 。
 
 ``.. _Sphinx: http://www.sphinx-doc.org/`` と記載し、
 Sphinx_ とすると名前付きハイパーリンクを作成できる。これを「外部ハイパーリンクターゲット」、
