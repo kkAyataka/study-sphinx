@@ -219,6 +219,16 @@ CSVテーブル
    * - .. literalinclude:: style-sample/label-ref-numref.txt
           :language: rst
      - .. include:: style-sample/label-ref-numref.txt
+
+.. list-table:: 別文章へのリンクと、ダウンロードリンク
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/doc-dl-link.txt
+          :language: rst
+     - .. include:: style-sample/doc-dl-link.txt
+
+
 ハイパーリンク
 email
 外部ハイパーリンクターゲット
