@@ -1,0 +1,18 @@
+URL（ http://www.sphinx-doc.org/ ） は自動でハイパーリンクになる。
+emailも同じ。 study@example.com 。
+
+``.. _Sphinx: http://www.sphinx-doc.org/`` と記載し、
+Sphinx_ とすると名前付きハイパーリンクを作成できる。これを「外部ハイパーリンクターゲット」、
+「名前付きハイパーリンク参照」と呼ぶ。
+
+``__: http://www.sphinx-doc.org/`` と記載して、Sphinx2__ とすることで、
+名前なしハイパーリンクという機能になる。ただ、明示的でないし、記載順への依存性があるので、
+基本的には使わない方が良い。
+
+`Sphinx3 <http://sphinx-doc.org/>`__ と記載することで、ハイパーリンクターゲットを作成せずに、
+ハイパーリンクを作成できる。これは埋め込みURL記法と呼ばれる。
+`Sphinx4 <http://sphinx-doc.org/>`_ とすることで（_が1つ）、
+Sphinx4_ というハイパーリンクターゲットを同時に作成できる。
+
+.. _Sphinx: http://www.sphinx-doc.org/
+.. __: http://www.sphinx-doc.org/

@@ -1,0 +1,13 @@
+.. glossary::
+
+   用語1
+     用語の説明
+
+   Sphinx
+     ドキュメント生成ツール
+
+   reST
+     reStructuredTextの略称。REST APIと混同しないようにreSTと表記する。
+
+文章中では :term:`用語1` と記載して参照する。ファイルをまたいで参照できるので、
+glossary用のファイルを作る。

@@ -1,0 +1,9 @@
+.. csv-table:: CSVファイルから読む
+   :header-rows: 1
+   :file: csv-table.csv
+
+.. csv-table:: 直接書く
+   :header: "head 1", "head 2", "head 3"
+
+   item1, item2, item3
+   "item 1", "item 2", "item 3"

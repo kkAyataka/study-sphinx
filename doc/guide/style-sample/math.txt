@@ -1,0 +1,7 @@
+.. math::
+
+  α_t(i) = P(O_1, O_2, … O_t, q_t = S_i λ)
+
+文中（ :math:`α_t(i) = P(O_1, O_2, … O_t, q_t = S_i λ)` ）にも書くこともできる。
+
+式といえば :math:`E = mc^{2}` か。シンタックスはLaTeX Math。

@@ -23,6 +23,7 @@ author = 'kkAyataka'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
+version = '0.1.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -51,6 +52,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 numfig = True
 
+rst_prolog = """
+.. role:: strike
+   :class: strike
+
+.. role:: red
+   :class: red
+"""
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -63,3 +72,8 @@ html_style = 'css/rtd_custom.css'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# -- Options for LaTeX -------------------------------------------------------
+
+latex_docclass = {'manual': 'jsbook'}
+latex_elements = {'figure_align':'H'}

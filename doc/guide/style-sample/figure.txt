@@ -1,0 +1,5 @@
+.. figure:: images/sample.png
+   :width: 240
+   :align: center
+
+   画像サンプル

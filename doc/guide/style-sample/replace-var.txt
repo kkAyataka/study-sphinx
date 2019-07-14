@@ -1,0 +1,3 @@
+:リリース: |release|
+:バージョン: |version|
+:日付: |today|

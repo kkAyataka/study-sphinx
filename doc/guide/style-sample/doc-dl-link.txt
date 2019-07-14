@@ -1,0 +1,3 @@
+別原稿へのリンクは :doc:`basic` と記述す。
+
+:download:`style-guide.rst` とすることで、ダウンロード用のリンクを作成できる。
