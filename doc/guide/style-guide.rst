@@ -42,6 +42,8 @@ reStructuredText/Sphinxで記述する際のローカルなガイドラインに
      - .. include:: style-sample/inline-literal.txt
 
 
+.. _style-guide-section:
+
 セクション
 ================================================================================
 
