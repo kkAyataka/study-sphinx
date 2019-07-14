@@ -115,8 +115,8 @@ Read the Docs Sphinxテーマの有効化
    }
 
    /* 表は改行して表示する */
-   .wy-table-responsive table > th,
-   .wy-table-responsive table > td {
+   .wy-table-responsive table th,
+   .wy-table-responsive table td {
      white-space: normal;
    }
 
