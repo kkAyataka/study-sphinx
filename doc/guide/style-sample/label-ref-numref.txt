@@ -8,8 +8,9 @@ section_label_ でラベルを参照する。これは文章の任意の場所�
 
 `セクション <section_label_>`__ と埋め込みURL記法を用いて、任意の文字列でリンクを貼れる。
 
-ラベルがセクションに付いている場合、``:ref:`section_label`` とすることで
-:ref:`section_label` にリンクを貼れる。
+ラベルがセクションに付いている場合、 ``:ref:`section_label``` とすることで
+:ref:`style-guide-section` にリンクを貼れる（表内にセクションが作れないので、
+本文にラベルを作ってます）。
 
 .. _figure_label:
 
@@ -20,4 +21,4 @@ section_label_ でラベルを参照する。これは文章の任意の場所�
    画像サンプル
 
 figure_label_ は図につけたラベルで、 ``conf.py`` で ``nummfig = True`` としていれば、
-``:numref:`figure_label`` とすることで、:numref:`figure_label` にリンクを貼れる。
+``:numref:`figure_label``` とすることで、:numref:`figure_label` にリンクを貼れる。
