@@ -15,3 +15,12 @@ h1, h2, h3 {
 .wy-table-responsive table td {
   white-space: normal;
 }
+
+/* 取り消し線用のクラス */
+.strike {
+  text-decoration: line-through;
+}
+
+.red {
+  color: red;
+}

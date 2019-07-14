@@ -4,3 +4,6 @@
    int main(const int argc, const char * argv) {
        std::cout << "Hello, World" << std::endl;
    }
+
+
+文章中に書くときは「‘」を用いた、 ``インラインリテラル`` を使用する。

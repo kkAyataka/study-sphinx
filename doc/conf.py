@@ -52,6 +52,14 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 numfig = True
 
+rst_prolog = """
+.. role:: strike
+   :class: strike
+
+.. role:: red
+   :class: red
+"""
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for

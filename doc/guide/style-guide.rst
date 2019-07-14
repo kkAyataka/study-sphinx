@@ -30,7 +30,17 @@ reStructuredText/Sphinxで記述する際のローカルなガイドラインに
 ベースラインをそろえるのに2を使用することが多いため、それに合わせる。
 
 
-.. _style-guide-section:
+インライン記法
+================================================================================
+
+.. list-table:: インライン記法
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/inline-literal.txt
+          :language: rst
+     - .. include:: style-sample/inline-literal.txt
+
 
 セクション
 ================================================================================
