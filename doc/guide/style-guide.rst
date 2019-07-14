@@ -315,10 +315,16 @@ CSVテーブル
 
 dodcinfo
 
-脚注
+用語集
+================================================================================
 
-注釈
-数式
+.. list-table:: 用語集
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/glossary.txt
+          :language: rst
+     - .. include:: style-sample/glossary.txt
 
 オプションリスト
 置換
