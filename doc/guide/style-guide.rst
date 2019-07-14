@@ -277,8 +277,17 @@ CSVテーブル
           :language: rst
      - .. include:: style-sample/inline-internal-target.txt
 
-インライン記法
-インライン記法（ロール）
+
+脚注
+================================================================================
+
+.. list-table:: 脚注
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/footnote.txt
+          :language: rst
+     - .. include:: style-sample/footnote.txt
 
 dodcinfo
 
