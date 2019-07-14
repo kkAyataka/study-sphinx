@@ -1,0 +1,5 @@
+:Date: 2019-7-14
+:Version: 0.1.0
+:OS: Windows 10 1809 64-bit
+:Python: v3.7.4 (64-bit)
+:Sphinx: v2.1.2
