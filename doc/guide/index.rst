@@ -5,3 +5,4 @@ Guide
 .. toctree::
 
    basic
+   style-guide
