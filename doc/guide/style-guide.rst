@@ -317,6 +317,23 @@ raw
      - .. include:: style-sample/field-list.txt
 
 
+置換変数
+--------------------------------------------------------------------------------
+
+あまり使わないような気がする。
+
+Read the Docsテーマのサイドバーに出ているのはversion。
+releaseがフルバージョンで、使い分けてもいいし、同じでもよい。
+
+.. list-table:: 置換変数
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/replace-var.txt
+          :language: rst
+     - .. include:: style-sample/replace-var.txt
+
+
 参考リンク
 ================================================================================
 
