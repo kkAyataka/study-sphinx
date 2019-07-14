@@ -87,9 +87,9 @@ reStructuredText/Sphinxで記述する際のローカルなガイドラインに
 
    * - テキスト
      - 表示
-   * - .. literalinclude:: style-sample/bullet-lists.txt
+   * - .. literalinclude:: style-sample/bullet-list.txt
           :language: rst
-     - .. include:: style-sample/bullet-lists.txt
+     - .. include:: style-sample/bullet-list.txt
 
 
 列挙リスト（番号付きリスト）
@@ -107,9 +107,9 @@ reStructuredText/Sphinxで記述する際のローカルなガイドラインに
 
    * - テキスト
      - 表示
-   * - .. literalinclude:: style-sample/enumerated-lists.txt
+   * - .. literalinclude:: style-sample/enumerated-list.txt
           :language: rst
-     - .. include:: style-sample/enumerated-lists.txt
+     - .. include:: style-sample/enumerated-list.txt
 
 
 定義リスト
@@ -119,9 +119,9 @@ reStructuredText/Sphinxで記述する際のローカルなガイドラインに
 
    * - テキスト
      - 表示
-   * - .. literalinclude:: style-sample/definition-lists.txt
+   * - .. literalinclude:: style-sample/definition-list.txt
           :language: rst
-     - .. include:: style-sample/definition-lists.txt
+     - .. include:: style-sample/definition-list.txt
 
 
 表（テーブル）
