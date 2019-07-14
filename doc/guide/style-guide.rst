@@ -229,6 +229,14 @@ CSVテーブル
      - .. include:: style-sample/doc-dl-link.txt
 
 
+.. list-table:: インライン内部ターゲット
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/inline-internal-target.txt
+          :language: rst
+     - .. include:: style-sample/inline-internal-target.txt
+
 ハイパーリンク
 email
 外部ハイパーリンクターゲット
