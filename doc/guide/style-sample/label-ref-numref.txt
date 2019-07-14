@@ -1,0 +1,23 @@
+.. _section_label:
+
+セクション
+..........
+
+section_label_ でラベルを参照する。これは文章の任意の場所のラベルを参照する。
+同じファイル内のみの参照する。
+
+`セクション <section_label_>`__ と埋め込みURL記法を用いて、任意の文字列でリンクを貼れる。
+
+ラベルがセクションに付いている場合、``:ref:`section_label`` とすることで
+:ref:`section_label` にリンクを貼れる。
+
+.. _figure_label:
+
+.. figure:: images/sample.png
+   :width: 25%
+   :align: center
+
+   画像サンプル
+
+figure_label_ は図につけたラベルで、 ``conf.py`` で ``nummfig = True`` としていれば、
+``:numref:`figure_label`` とすることで、:numref:`figure_label` にリンクを貼れる。
