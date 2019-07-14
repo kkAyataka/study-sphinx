@@ -180,37 +180,70 @@ TOC（目次）・ページ内目次
 リストテーブル
 --------------------------------------------------------------------------------
 
-.. list-table:: リストテーブル
+.. only:: html
 
-   * - テキスト
-     - 表示
-   * - .. literalinclude:: style-sample/list-table.txt
-          :language: rst
-     - .. include:: style-sample/list-table.txt
+   .. list-table:: リストテーブル
+
+      * - テキスト
+        - 表示
+      * - .. literalinclude:: style-sample/list-table.txt
+             :language: rst
+        - .. include:: style-sample/list-table.txt
+
+.. only:: latex
+
+   テキスト
+     .. literalinclude:: style-sample/list-table.txt
+        :language: rst
+
+   表示
+      .. include:: style-sample/list-table.txt
 
 
 CSVテーブル
 --------------------------------------------------------------------------------
 
-.. list-table:: CSVテーブル
+.. only:: html
 
-   * - テキスト
-     - 表示
-   * - .. literalinclude:: style-sample/csv-table.txt
-          :language: rst
-     - .. include:: style-sample/csv-table.txt
+   .. list-table:: CSVテーブル
+
+      * - テキスト
+        - 表示
+      * - .. literalinclude:: style-sample/csv-table.txt
+             :language: rst
+        - .. include:: style-sample/csv-table.txt
+
+.. only:: latex
+
+   テキスト
+     .. literalinclude:: style-sample/csv-table.txt
+        :language: rst
+
+   表示
+     .. include:: style-sample/csv-table.txt
 
 
 シンプルテーブル
 --------------------------------------------------------------------------------
 
-.. list-table:: シンプルテーブル
+.. only:: html
 
-   * - テキスト
-     - 表示
-   * - .. literalinclude:: style-sample/simple-table.txt
-          :language: rst
-     - .. include:: style-sample/simple-table.txt
+   .. list-table:: シンプルテーブル
+
+      * - テキスト
+        - 表示
+      * - .. literalinclude:: style-sample/simple-table.txt
+             :language: rst
+        - .. include:: style-sample/simple-table.txt
+
+.. only:: latex
+
+   テキスト
+     .. literalinclude:: style-sample/simple-table.txt
+        :language: rst
+
+   表示
+     .. include:: style-sample/simple-table.txt
 
 
 図
@@ -295,13 +328,24 @@ CSVテーブル
 注釈
 ================================================================================
 
-.. list-table:: 注釈
+.. only:: html
 
-   * - テキスト
-     - 表示
-   * - .. literalinclude:: style-sample/admonition.txt
-          :language: rst
-     - .. include:: style-sample/admonition.txt
+   .. list-table:: 注釈
+
+      * - テキスト
+        - 表示
+      * - .. literalinclude:: style-sample/admonition.txt
+             :language: rst
+        - .. include:: style-sample/admonition.txt
+
+.. only:: latex
+
+   テキスト
+     .. literalinclude:: style-sample/admonition.txt
+        :language: rst
+
+   表示
+     .. include:: style-sample/admonition.txt
 
 
 脚注

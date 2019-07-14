@@ -77,6 +77,3 @@ html_static_path = ['_static']
 
 latex_docclass = {'manual': 'jsbook'}
 latex_elements = {'figure_align':'H'}
-
-if 'latexpdf' in sys.argv:
-    exclude_patterns.append('guide/style-guide.rst')
