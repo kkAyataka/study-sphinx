@@ -124,6 +124,60 @@ reStructuredText/Sphinxで記述する際のローカルなガイドラインに
      - .. include:: style-sample/definition-lists.txt
 
 
+表（テーブル）
+================================================================================
+
+次の順番で使う。
+
+1. リストテーブル
+2. CSVテーブル
+3. シンプルテーブル
+
+
+複雑なテーブル表現はreST/Sphinxには向かないとしてある程度諦める。
+複雑・超大な表に関してはExcelファイルをダウンロードしたり、
+オンラインOfficeなどで開くようにする。
+
+グリッド表現はリッチな表現ができるが、記述も保守も難しい。
+これを使用するのであれば、Excelから引用できるように拡張機能を準備したほうが良い。
+
+
+リストテーブル
+--------------------------------------------------------------------------------
+
+.. list-table:: リストテーブル
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/list-table.txt
+          :language: rst
+     - .. include:: style-sample/list-table.txt
+
+
+CSVテーブル
+--------------------------------------------------------------------------------
+
+.. list-table:: CSVテーブル
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/csv-table.txt
+          :language: rst
+     - .. include:: style-sample/csv-table.txt
+
+
+シンプルテーブル
+--------------------------------------------------------------------------------
+
+.. list-table:: シンプルテーブル
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/simple-table.txt
+          :language: rst
+     - .. include:: style-sample/simple-table.txt
+
+
 画像
 ================================================================================
 
