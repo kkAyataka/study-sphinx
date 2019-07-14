@@ -203,6 +203,18 @@ raw
      - .. include:: style-sample/literal-block.txt
 
 
+引用リテラルブロック
+--------------------------------------------------------------------------------
+
+.. list-table:: 引用リテラルブロック
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/quoted-literal-block.txt
+          :language: rst
+     - .. include:: style-sample/quoted-literal-block.txt
+
+
 参考リンク
 ================================================================================
 
