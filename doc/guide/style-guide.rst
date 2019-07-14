@@ -190,6 +190,18 @@ CSVテーブル
      - .. include:: style-sample/figure.txt
 
 
+コードブロック
+================================================================================
+
+.. list-table:: コードブロック
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/code-block.txt
+          :language: rst
+     - .. include:: style-sample/code-block.txt
+
+
 リンク（参照）
 ================================================================================
 
