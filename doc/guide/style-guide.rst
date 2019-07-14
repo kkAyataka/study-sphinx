@@ -278,6 +278,18 @@ CSVテーブル
      - .. include:: style-sample/inline-internal-target.txt
 
 
+数式
+================================================================================
+
+.. list-table:: 数式
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/math.txt
+          :language: rst
+     - .. include:: style-sample/math.txt
+
+
 注釈
 ================================================================================
 
