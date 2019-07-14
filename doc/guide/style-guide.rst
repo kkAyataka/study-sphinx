@@ -204,7 +204,7 @@ CSVテーブル
      - .. include:: style-sample/code-block.txt
 
 
-リンク（参照）
+ラベル・リンク
 ================================================================================
 
 ``.. _label:`` で任意の場所にラベルをつけ、 ``label_`` として参照する。
@@ -245,15 +245,6 @@ CSVテーブル
    * - .. literalinclude:: style-sample/inline-internal-target.txt
           :language: rst
      - .. include:: style-sample/inline-internal-target.txt
-
-ハイパーリンク
-email
-外部ハイパーリンクターゲット
-名前付きハイパーリンク参照
-名前なしハイパーリンク
-埋め込みURL記法
-
-
 
 インライン記法
 インライン記法（ロール）
