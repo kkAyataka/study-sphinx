@@ -23,6 +23,7 @@ Study Sphinx
 
    setup/index
    guide/index
+   sample-calc-app/index
 
 
 ================================================================================
