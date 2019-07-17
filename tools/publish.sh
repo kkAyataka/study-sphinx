@@ -2,9 +2,14 @@
 
 cd `dirname "${0}"`
 
-readonly GIT_REPO="git@github.com:kkAyataka/study-sphinx.git"
+readonly GIT_REPO=`git remote get-url origin`
 readonly DOC_VER=`grep "version =" ../doc/conf.py | cut -d "'" -f 2`
 readonly PDF_NAME="studysphinx.pdf"
+
+# print var
+echo GIT_REPO=${GIT_REPO}
+echo DOC_VER=${DOC_VER}
+echo PDF_NAME=${PDF_NAME}
 
 # build pdf
 make -C ../doc latexpdf
@@ -31,11 +36,10 @@ fi
 # cp html
 cp -r ../doc/_build/html "${DST_VER_DIR}"
 
+# cleanup
+rm "../doc/${PDF_NAME}"
+
 # ready to publish to gh-pages
 cd _work
 git add .
 git status
-cd -
-
-# cleanup
-rm "../doc/${PDF_NAME}"
