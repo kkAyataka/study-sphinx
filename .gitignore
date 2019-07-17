@@ -4,3 +4,6 @@
 # Sphinx
 doc/_build
 doc/__pycache__
+
+# tools
+tools/_work
