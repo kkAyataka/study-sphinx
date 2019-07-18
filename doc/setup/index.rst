@@ -48,29 +48,48 @@ https://sphinx-users.jp/reverse-dict/html/japanese.html を参考にファイル
 
 
 --------------------------------------------------------------------------------
-エディタ環境の構築
+エディタ環境
 --------------------------------------------------------------------------------
 
-Visual Studio Codeを使用している。
+.. list-table:: エディタ
+   :header-rows: 1
 
+   * - 項目
+     - 内容
+     - 補足
+   * - エディタ
 - Visual Studio Code
+     - https://code.visualstudio.com/
+   * - フォント
+     - Ricty Diminished
+     - https://github.com/edihbrandon/RictyDiminished
+   * - ターミナル（Windows）
+     - Git Bash
+     - WindowsではGitに付属するGit Bashを使用する
+   * - 拡張機能
+     - - EditorConfig
+       - reStructuredText
+       - Table Formatter
+     - Table FormatterはreSTに対応しているが、個人的にはあまり使用しない
 
-  - WindowsでのターミナルはGit Windowsに付属のGit Bash
 
-- Visual Studio Codeの拡張機能
+Visual Studio CodeのPython環境について
+================================================================================
 
-  - EditorConfig for VS Code
+ワークスペースの設定（ ``.vscode/settings.json`` ）を以下のようにすることで、任意のバージョンのPythonを使用することができる。
+SphinxではPython 3を使用したいため、Pyhton 2と併用の環境で設定する。
 
-    - 改行コード等を設定することで、reST記載時のストレスが減る
+.. code-block:: json
 
-  - reStructedText
+   {
+     "python.pythonPath": "C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+     "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37;C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37\\Scripts;${env:PATH}"
+     }
+   }
 
-    - ハイライトとプレビュー用
-
-  - Table Formatter
-
-    - reStructedTextに対応していて、整形してくれる
-    - 個人的にはあまり使わない
+Pythonのパスを指定することで、任意のバージョンのPythonを使用することができる。
+また、統合ターミナルの環境変数を設定することで、ターミナルで使用するPython環境もそろえることができる。
 
 
 --------------------------------------------------------------------------------
