@@ -39,7 +39,7 @@ Sphinx環境の構築
 
 
 日本語拡張の設定
---------------------------------------------------------------------------------
+================================================================================
 
 通常の設定では段落中で改行すると、改行部分にスペースが入る。
 日本語ドキュメントではこの動作は好ましくないため、 Sphinx-Users.jp_ で公開されている日本語拡張を入れる。
@@ -48,29 +48,48 @@ https://sphinx-users.jp/reverse-dict/html/japanese.html を参考にファイル
 
 
 --------------------------------------------------------------------------------
-エディタ環境の構築
+エディタ環境
 --------------------------------------------------------------------------------
 
-Visual Studio Codeを使用している。
+.. list-table:: エディタ
+   :header-rows: 1
 
-- Visual Studio Code
+   * - 項目
+     - 内容
+     - 補足
+   * - エディタ
+     - Visual Studio Code
+     - https://code.visualstudio.com/
+   * - フォント
+     - Ricty Diminished
+     - https://github.com/edihbrandon/RictyDiminished
+   * - ターミナル（Windows）
+     - Git Bash
+     - WindowsではGitに付属するGit Bashを使用する
+   * - 拡張機能
+     - - EditorConfig
+       - reStructuredText
+       - Table Formatter
+     - Table FormatterはreSTに対応しているが、個人的にはあまり使用しない
 
-  - WindowsでのターミナルはGit Windowsに付属のGit Bash
 
-- Visual Studio Codeの拡張機能
+Visual Studio CodeのPython環境について
+================================================================================
 
-  - EditorConfig for VS Code
+ワークスペースの設定（ ``.vscode/settings.json`` ）を以下のようにすることで、任意のバージョンのPythonを使用することができる。
+SphinxではPython 3を使用したいため、Pyhton 2と併用の環境で設定する。
 
-    - 改行コード等を設定することで、reST記載時のストレスが減る
+.. code-block:: json
 
-  - reStructedText
+   {
+     "python.pythonPath": "C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+     "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37;C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37\\Scripts;${env:PATH}"
+     }
+   }
 
-    - ハイライトとプレビュー用
-
-  - Table Formatter
-
-    - reStructedTextに対応していて、整形してくれる
-    - 個人的にはあまり使わない
+Pythonのパスを指定することで、任意のバージョンのPythonを使用することができる。
+また、統合ターミナルの環境変数を設定することで、ターミナルで使用するPython環境もそろえることができる。
 
 
 --------------------------------------------------------------------------------
@@ -90,6 +109,12 @@ Visual Studio Codeを使用している。
     - 現状はちょっとあきらめてる
     - ディレクティブが3だと書きやすいが...
     - 箇条書きは2スペースのほうがインデントの変更がしやすい
+
+- ``git subtree`` による構成は使用しない
+
+  - GitHub Pagesを前提にした場合、 ``git subtree`` を利用して出力フォルダと
+    ``gh-pages`` ブランチを紐づける方法があるが、この方法については採用しない
+  - 公開用ファイルが ``master`` ブランチに見えるためで、GitHub上での検索が汚れるため
 
 
 --------------------------------------------------------------------------------
