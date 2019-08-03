@@ -16,6 +16,10 @@ Study Sphinx
    * - GnuWin32: Make
      - 3.81
 
+.. only:: html
+
+   PDF版のダウンロード: :download:`studysphinx.pdf`
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

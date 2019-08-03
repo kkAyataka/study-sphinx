@@ -17,6 +17,9 @@ echo WORK_DIR=${WORK_DIR}
 echo DST_VER_DIR=${DST_VER_DIR}
 echo DST_LATEST_DIR=${DST_LATEST_DIR}
 
+# clean
+rm -rf ../doc/_build
+
 # build pdf
 make -C ../doc latexpdf
 cp "../doc/_build/latex/${PDF_NAME}" "../doc/${PDF_NAME}"
