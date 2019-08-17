@@ -109,8 +109,8 @@ Read the Docs Sphinxテーマの有効化
      max-width: none;
    }
 
-   /* h1～h3に下線を引く*/
-   h1, h2, h3 {
+   /* h1～h4に下線を引く*/
+   h1, h2, h3, h4 {
      border-bottom: 1px solid #2980B9
    }
 
@@ -153,6 +153,10 @@ PDFファイルを作る場合は使用を控える。
    .red {
      color: red;
    }
+
+
+上記の準備をした上で、インラインリテラルとして使用する。
+``:strike:`取り消し線``` で取り消し線がひかれ、``:red:`赤字``` で赤字になる。
 
 
 latexpdf出力の調整
