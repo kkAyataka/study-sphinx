@@ -372,6 +372,18 @@ CSVテーブル
      - .. include:: style-sample/glossary.txt
 
 
+置換
+================================================================================
+
+.. list-table:: 置換
+
+   * - テキスト
+     - 表示
+   * - .. literalinclude:: style-sample/replace.txt
+          :language: rst
+     - .. include:: style-sample/replace.txt
+
+
 使用すると表現が増す構文
 ================================================================================
 
