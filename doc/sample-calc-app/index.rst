@@ -37,6 +37,8 @@ Calculator仕様書
      - Calculator
    * - 対応OS
      - Windows 10 64-bit（1809以降）
+   * - 実行不ファイルのアーキテクチャ
+     - 64-bit
    * - 言語
      - 日本語
    * - インストーラー
