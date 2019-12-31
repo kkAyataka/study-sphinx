@@ -129,6 +129,41 @@ Read the Docs Sphinxテーマの有効化
    }
 
 
+PlantUMLの有効化
+================================================================================
+
+.. uml::
+   :caption: PlantUML
+   :align: center
+
+   skinparam componentStyle uml2
+   [Sphinx] --> [PlantUML]
+
+以下のように記述すると、上記のような図になる。
+
+.. code-block:: rest
+
+   .. uml::
+      :caption: PlantUML
+      :align: center
+
+      skinparam componentStyle uml2
+      [Sphinx] --> [PlantUML]
+
+``pip install sphinxcontrib-plantuml`` で拡張機能をインストールし、``conf.py`` を設定することで有効化する。
+PlantUMLを動かすため、事前にJavaやGraphvizのインストールも必要。
+
+.. code-block:: python
+
+   # conf.py
+
+   extensions = [
+     'sphinxcontrib.plantuml'
+   ]
+
+   plantuml = 'java -jar /path/to/plantuml.jar'
+
+
 拡張リテラル
 ================================================================================
 
