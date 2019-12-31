@@ -15,6 +15,7 @@ import sys
 import sphinx_rtd_theme
 
 sys.path.insert(0, os.path.abspath('.'))
+homedir = os.path.expanduser('~')
 
 
 # -- Project information -----------------------------------------------------
@@ -35,8 +36,12 @@ version = '0.1.0'
 # ones.
 extensions = [
     'sphinx_rtd_theme',
+    'sphinxcontrib.plantuml',
     'japanesesupport'
 ]
+
+# PlantUML
+plantuml = f'java -jar {homedir}/.local/bin/plantuml.jar'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

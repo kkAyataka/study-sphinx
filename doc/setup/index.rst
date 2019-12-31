@@ -47,6 +47,49 @@ Sphinx環境の構築
 https://sphinx-users.jp/reverse-dict/html/japanese.html を参考にファイルをダウンロードして、``conf.py`` を設定する。
 
 
+PlantUML
+================================================================================
+
+.. uml::
+   :caption: PlantUML
+   :align: center
+
+   skinparam componentStyle uml2
+   [Sphinx] --> [PlantUML]
+
+テキストベースでUMLベースを描けるようになる。
+軽快に使えてなかなか楽しい。図を残す目的としては良いと思う。
+ただ、図を使って考えるのには向いてないので、あくまでドキュメントとして残す用途。
+
+- javaをインストールする
+
+  - PlantUMLはJavaアプリ
+  - AdoptOpenJDK_ のOpenJ9版を使用
+
+- Graphvisをインストールする
+
+  - https://www.graphviz.org/download/
+  - Windowsはインストーラーだが、MacではHomebrewなどを経由する
+
+- PlauntUMLをダウンロードして適当に配置
+
+  - ``~/.local/bin/pluntuml.jar``
+
+- ``sphinxcontrib-plantuml`` をインストールする
+
+.. code-block::
+
+   > pip install sphinxcontrib-plantuml
+
+
+参考
+--------------------------------------------------------------------------------
+
+- PlantUML: https://plantuml.com/
+- Graphviz: https://www.graphviz.org/
+- sphinxcontrib-plantuml: https://pypi.org/project/sphinxcontrib-plantuml/
+
+
 --------------------------------------------------------------------------------
 エディタ環境
 --------------------------------------------------------------------------------
@@ -131,3 +174,4 @@ Pythonのパスを指定することで、任意のバージョンのPythonを�
 .. _`Make for Windows`: http://gnuwin32.sourceforge.net/packages/make.htm
 .. _`TeX Live`: https://www.tug.org/texlive/
 .. _Sphinx-Users.jp: https://sphinx-users.jp/index.html
+.. _AdoptOpenJDK: https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=openj9
