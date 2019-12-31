@@ -88,6 +88,14 @@ Read the Docs Sphinxテーマの有効化
 
 .. code-block:: python
 
+   # conf.py
+
+   import sphinx_rtd_theme
+
+   extensions = [
+     "sphinx_rtd_theme",
+   ]
+
    # html
    html_theme = 'sphinx_rtd_theme'
    html_style = 'css/rtd_custom.css'

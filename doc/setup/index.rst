@@ -24,7 +24,7 @@ Sphinx環境の構築
 
 ::
 
-  > pip install sphinx_rtd_theme
+  > pip install sphinx-rtd-theme
 
 - GNU Makeのインストール（Windows）
 
