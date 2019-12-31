@@ -113,18 +113,19 @@
 <li class="toctree-l3"><a class="reference internal" href="#id19">2.2.15. 注釈</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id20">2.2.16. 脚注</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id26">2.2.17. 用語集</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id27">2.2.18. 使用すると表現が増す構文</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id28">2.2.18.1. リテラルブロック</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id29">2.2.18.2. 引用リテラルブロック</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id30">2.2.18.3. フィールドリスト</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id31">2.2.18.4. オプションリスト</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id32">2.2.18.5. 置換変数</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id33">2.2.18.6. コメント（出力時に表示されない文章）</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id34">2.2.18.7. インクルード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#raw">2.2.18.8. raw</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">2.2.18. 置換</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">2.2.19. 使用すると表現が増す構文</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id29">2.2.19.1. リテラルブロック</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id30">2.2.19.2. 引用リテラルブロック</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id31">2.2.19.3. フィールドリスト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id32">2.2.19.4. オプションリスト</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id33">2.2.19.5. 置換変数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id34">2.2.19.6. コメント（出力時に表示されない文章）</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id35">2.2.19.7. インクルード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raw">2.2.19.8. raw</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id35">2.2.19. 参考リンク</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id36">2.2.20. 参考リンク</a></li>
 </ul>
 </li>
 </ul>
@@ -174,9 +175,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">2. Guide</a> &raquo;</li>
+          <li><a href="index.html"><span class="section-number">2. </span>Guide</a> &raquo;</li>
         
-      <li>2.2. Style Guide</li>
+      <li><span class="section-number">2.2. </span>Style Guide</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -196,50 +197,51 @@
            <div itemprop="articleBody">
             
   <div class="section" id="style-guide">
-<h1>2.2. Style Guide<a class="headerlink" href="#style-guide" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">2.2. </span>Style Guide<a class="headerlink" href="#style-guide" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>reStructuredText/Sphinxで記述する際のローカルなガイドラインについて記述する。</p>
 <div class="contents local topic" id="id1">
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id68">ファイル名・フォルダ名</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id69">インデント</a></p></li>
-<li><p><a class="reference internal" href="#id4" id="id70">インライン記法</a></p></li>
-<li><p><a class="reference internal" href="#style-guide-section" id="id71">セクション</a></p></li>
-<li><p><a class="reference internal" href="#toc" id="id72">TOC（目次）・ページ内目次</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id73">段落</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id74">箇条書き（番号なしリスト）</a></p></li>
-<li><p><a class="reference internal" href="#id8" id="id75">列挙リスト（番号付きリスト）</a></p></li>
-<li><p><a class="reference internal" href="#id9" id="id76">定義リスト</a></p></li>
-<li><p><a class="reference internal" href="#id10" id="id77">表（テーブル）</a></p>
+<li><p><a class="reference internal" href="#id2" id="id70">ファイル名・フォルダ名</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id71">インデント</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id72">インライン記法</a></p></li>
+<li><p><a class="reference internal" href="#style-guide-section" id="id73">セクション</a></p></li>
+<li><p><a class="reference internal" href="#toc" id="id74">TOC（目次）・ページ内目次</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id75">段落</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id76">箇条書き（番号なしリスト）</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id77">列挙リスト（番号付きリスト）</a></p></li>
+<li><p><a class="reference internal" href="#id9" id="id78">定義リスト</a></p></li>
+<li><p><a class="reference internal" href="#id10" id="id79">表（テーブル）</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id11" id="id78">リストテーブル</a></p></li>
-<li><p><a class="reference internal" href="#csv" id="id79">CSVテーブル</a></p></li>
-<li><p><a class="reference internal" href="#id12" id="id80">シンプルテーブル</a></p></li>
+<li><p><a class="reference internal" href="#id11" id="id80">リストテーブル</a></p></li>
+<li><p><a class="reference internal" href="#csv" id="id81">CSVテーブル</a></p></li>
+<li><p><a class="reference internal" href="#id12" id="id82">シンプルテーブル</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id13" id="id81">図</a></p></li>
-<li><p><a class="reference internal" href="#id14" id="id82">コードブロック</a></p></li>
-<li><p><a class="reference internal" href="#id15" id="id83">ラベル・リンク</a></p></li>
-<li><p><a class="reference internal" href="#id18" id="id84">数式</a></p></li>
-<li><p><a class="reference internal" href="#id19" id="id85">注釈</a></p></li>
-<li><p><a class="reference internal" href="#id20" id="id86">脚注</a></p></li>
-<li><p><a class="reference internal" href="#id26" id="id87">用語集</a></p></li>
-<li><p><a class="reference internal" href="#id27" id="id88">使用すると表現が増す構文</a></p>
+<li><p><a class="reference internal" href="#id13" id="id83">図</a></p></li>
+<li><p><a class="reference internal" href="#id14" id="id84">コードブロック</a></p></li>
+<li><p><a class="reference internal" href="#id15" id="id85">ラベル・リンク</a></p></li>
+<li><p><a class="reference internal" href="#id18" id="id86">数式</a></p></li>
+<li><p><a class="reference internal" href="#id19" id="id87">注釈</a></p></li>
+<li><p><a class="reference internal" href="#id20" id="id88">脚注</a></p></li>
+<li><p><a class="reference internal" href="#id26" id="id89">用語集</a></p></li>
+<li><p><a class="reference internal" href="#id27" id="id90">置換</a></p></li>
+<li><p><a class="reference internal" href="#id28" id="id91">使用すると表現が増す構文</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id28" id="id89">リテラルブロック</a></p></li>
-<li><p><a class="reference internal" href="#id29" id="id90">引用リテラルブロック</a></p></li>
-<li><p><a class="reference internal" href="#id30" id="id91">フィールドリスト</a></p></li>
-<li><p><a class="reference internal" href="#id31" id="id92">オプションリスト</a></p></li>
-<li><p><a class="reference internal" href="#id32" id="id93">置換変数</a></p></li>
-<li><p><a class="reference internal" href="#id33" id="id94">コメント（出力時に表示されない文章）</a></p></li>
-<li><p><a class="reference internal" href="#id34" id="id95">インクルード</a></p></li>
-<li><p><a class="reference internal" href="#raw" id="id96">raw</a></p></li>
+<li><p><a class="reference internal" href="#id29" id="id92">リテラルブロック</a></p></li>
+<li><p><a class="reference internal" href="#id30" id="id93">引用リテラルブロック</a></p></li>
+<li><p><a class="reference internal" href="#id31" id="id94">フィールドリスト</a></p></li>
+<li><p><a class="reference internal" href="#id32" id="id95">オプションリスト</a></p></li>
+<li><p><a class="reference internal" href="#id33" id="id96">置換変数</a></p></li>
+<li><p><a class="reference internal" href="#id34" id="id97">コメント（出力時に表示されない文章）</a></p></li>
+<li><p><a class="reference internal" href="#id35" id="id98">インクルード</a></p></li>
+<li><p><a class="reference internal" href="#raw" id="id99">raw</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id35" id="id97">参考リンク</a></p></li>
+<li><p><a class="reference internal" href="#id36" id="id100">参考リンク</a></p></li>
 </ul>
 </div>
 <div class="section" id="id2">
-<h2><a class="toc-backref" href="#id68">2.2.1. ファイル名・フォルダ名</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id70"><span class="section-number">2.2.1. </span>ファイル名・フォルダ名</a><a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>全て小文字で、単語ごとに「-」でつなげる</p></li>
 </ul>
@@ -248,15 +250,15 @@
 </div>
 </div>
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id69">2.2.2. インデント</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id71"><span class="section-number">2.2.2. </span>インデント</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>インデントが必要な場合は<strong>2スペース</strong>を用いる。</p>
 <p>基本的にreStructuredTextのルールに従うので、インデントというよりはベースラインをそろえるということになる。この時、基本的に3か2スペースが必要になる。</p>
 <p>定義リストやリテラルコードブロックなど、一部定義が緩いものがあるが、この場合に<strong>2スペース</strong>を用いる。ベースラインをそろえるのに2を使用することが多いため、それに合わせる。</p>
 </div>
 <div class="section" id="id4">
-<h2><a class="toc-backref" href="#id70">2.2.3. インライン記法</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id36">
-<caption><span class="caption-number">表 2.1 </span><span class="caption-text">インライン記法</span><a class="headerlink" href="#id36" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id72"><span class="section-number">2.2.3. </span>インライン記法</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id37">
+<caption><span class="caption-number">表 2.1 </span><span class="caption-text">インライン記法</span><a class="headerlink" href="#id37" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -293,7 +295,7 @@
 </table>
 </div>
 <div class="section" id="style-guide-section">
-<span id="id5"></span><h2><a class="toc-backref" href="#id71">2.2.4. セクション</a><a class="headerlink" href="#style-guide-section" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<span id="id5"></span><h2><a class="toc-backref" href="#id73"><span class="section-number">2.2.4. </span>セクション</a><a class="headerlink" href="#style-guide-section" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>7まで使用するというわけではないが、少し多めに。セクションはページごとに判定されるので、セクション4で大体収まる。</p>
 <p>複数ファイルで構成する場合、章タイトルとしてセクションを1レベル消費し、<strong>テキスト的に</strong>セクションをそろえると、全体として1レベル深くなる。ただし、その場合もセクション5で大体収まるし、reST的にはあまり意味が無いので、好みの話になる。</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">=============</span>
@@ -322,13 +324,13 @@
 </div>
 </div>
 <div class="section" id="toc">
-<h2><a class="toc-backref" href="#id72">2.2.5. TOC（目次）・ページ内目次</a><a class="headerlink" href="#toc" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id74"><span class="section-number">2.2.5. </span>TOC（目次）・ページ内目次</a><a class="headerlink" href="#toc" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">.. 大元のマスターファイル（index.rst）に記載する。</span>
 <span class="cp">   :numbered:を指定することで、セクションに番号が付く。</span>
 
 <span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
-   <span class="nc">:maxdepth:</span> <span class="nf">2</span>
-   <span class="nc">:caption:</span> <span class="nf">Contents:</span>
+   <span class="nc">:maxdepth:</span> 2
+   <span class="nc">:caption:</span> Contents:
    <span class="nc">:numbered:</span>
 
 <span class="cp">.. マスターファイル（index.rst）以外に記載する。</span>
@@ -341,9 +343,9 @@
 </div>
 </div>
 <div class="section" id="id6">
-<h2><a class="toc-backref" href="#id73">2.2.6. 段落</a><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id37">
-<caption><span class="caption-number">表 2.2 </span><span class="caption-text">段落</span><a class="headerlink" href="#id37" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id75"><span class="section-number">2.2.6. </span>段落</a><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id38">
+<caption><span class="caption-number">表 2.2 </span><span class="caption-text">段落</span><a class="headerlink" href="#id38" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -371,10 +373,10 @@
 </table>
 </div>
 <div class="section" id="id7">
-<h2><a class="toc-backref" href="#id74">2.2.7. 箇条書き（番号なしリスト）</a><a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id76"><span class="section-number">2.2.7. </span>箇条書き（番号なしリスト）</a><a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>「-」か「*」を使う。reSTで使える文字はあるものの、他のマークアップ書式（Markdownなど）と共通の意味で使えるものを使う。</p>
-<table class="docutils align-default" id="id38">
-<caption><span class="caption-number">表 2.3 </span><span class="caption-text">番号なしリスト</span><a class="headerlink" href="#id38" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id39">
+<caption><span class="caption-number">表 2.3 </span><span class="caption-text">番号なしリスト</span><a class="headerlink" href="#id39" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -406,11 +408,11 @@
 </table>
 </div>
 <div class="section" id="id8">
-<h2><a class="toc-backref" href="#id75">2.2.8. 列挙リスト（番号付きリスト）</a><a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id77"><span class="section-number">2.2.8. </span>列挙リスト（番号付きリスト）</a><a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>まず、列挙リスト事態、使用場面を考える。順番であることが重要である場合、意識させたほうが良い場合のみに使用する。多くのケースでは箇条書きで十分である。</p>
 <p>基本的に「#」を用いる。自動採番されるため、誤記が減ったり、保守（追記/削除）が容易になる。「1.」の記述がダメというわけではない。テキスト単体では読みやすいし、マークアップによっては（途中の番号から始めるために）必要になったりする。ただし、リストが大きくなると保守性に影響が出てくるため、使いどころを考える必要がある。</p>
-<table class="docutils align-default" id="id39">
-<caption><span class="caption-number">表 2.4 </span><span class="caption-text">番号付きリスト</span><a class="headerlink" href="#id39" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id40">
+<caption><span class="caption-number">表 2.4 </span><span class="caption-text">番号付きリスト</span><a class="headerlink" href="#id40" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -422,8 +424,8 @@
 <tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">1.</span> 番号付きリスト1
 <span class="m">2.</span> 番号付きリスト2
 
-     <span class="m">#.</span> 番号付きリスト3（自動採番）
-     <span class="m">#.</span> 番号付きリスト4（自動採番）
+   <span class="m">#.</span> 番号付きリスト3（自動採番）
+   <span class="m">#.</span> 番号付きリスト4（自動採番）
 
 <span class="m">#.</span> 番号付きリスト5（自動採番）
 
@@ -432,15 +434,13 @@
 </pre></div>
 </div>
 </td>
-<td><ol class="arabic">
+<td><ol class="arabic simple">
 <li><p>番号付きリスト1</p></li>
 <li><p>番号付きリスト2</p>
-<blockquote>
-<div><ol class="arabic simple">
+<ol class="arabic simple">
 <li><p>番号付きリスト3（自動採番）</p></li>
 <li><p>番号付きリスト4（自動採番）</p></li>
 </ol>
-</div></blockquote>
 </li>
 <li><p>番号付きリスト5（自動採番）</p></li>
 </ol>
@@ -454,9 +454,9 @@
 </table>
 </div>
 <div class="section" id="id9">
-<h2><a class="toc-backref" href="#id76">2.2.9. 定義リスト</a><a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id40">
-<caption><span class="caption-number">表 2.5 </span><span class="caption-text">定義リスト</span><a class="headerlink" href="#id40" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id78"><span class="section-number">2.2.9. </span>定義リスト</a><a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id41">
+<caption><span class="caption-number">表 2.5 </span><span class="caption-text">定義リスト</span><a class="headerlink" href="#id41" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -486,7 +486,7 @@
 </table>
 </div>
 <div class="section" id="id10">
-<h2><a class="toc-backref" href="#id77">2.2.10. 表（テーブル）</a><a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id79"><span class="section-number">2.2.10. </span>表（テーブル）</a><a class="headerlink" href="#id10" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>次の順番で使う。</p>
 <ol class="arabic simple">
 <li><p>リストテーブル</p></li>
@@ -496,9 +496,9 @@
 <p>複雑なテーブル表現はreST/Sphinxには向かないとしてある程度諦める。複雑・超大な表に関してはExcelファイルをダウンロードしたり、オンラインOfficeなどで開くようにする。</p>
 <p>グリッド表現はリッチな表現ができるが、記述も保守も難しい。これを使用するのであれば、Excelから引用できるように拡張機能を準備したほうが良い。</p>
 <div class="section" id="id11">
-<h3><a class="toc-backref" href="#id78">2.2.10.1. リストテーブル</a><a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id41">
-<caption><span class="caption-number">表 2.6 </span><span class="caption-text">リストテーブル</span><a class="headerlink" href="#id41" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3><a class="toc-backref" href="#id80"><span class="section-number">2.2.10.1. </span>リストテーブル</a><a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id42">
+<caption><span class="caption-number">表 2.6 </span><span class="caption-text">リストテーブル</span><a class="headerlink" href="#id42" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -508,7 +508,7 @@
 <td><p>表示</p></td>
 </tr>
 <tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">list-table</span><span class="p">::</span> 表のタイトル
-   <span class="nc">:header-rows:</span> <span class="nf">1</span>
+   <span class="nc">:header-rows:</span> 1
 
    <span class="m">*</span> - 項目
      <span class="m">-</span> 内容
@@ -526,8 +526,8 @@
 </pre></div>
 </div>
 </td>
-<td><table class="docutils align-default" id="id42">
-<caption><span class="caption-number">表 2.7 </span><span class="caption-text">表のタイトル</span><a class="headerlink" href="#id42" title="このテーブルへのパーマリンク">¶</a></caption>
+<td><table class="docutils align-default" id="id43">
+<caption><span class="caption-number">表 2.7 </span><span class="caption-text">表のタイトル</span><a class="headerlink" href="#id43" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -565,9 +565,9 @@
 </table>
 </div>
 <div class="section" id="csv">
-<h3><a class="toc-backref" href="#id79">2.2.10.2. CSVテーブル</a><a class="headerlink" href="#csv" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id44">
-<caption><span class="caption-number">表 2.9 </span><span class="caption-text">CSVテーブル</span><a class="headerlink" href="#id44" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3><a class="toc-backref" href="#id81"><span class="section-number">2.2.10.2. </span>CSVテーブル</a><a class="headerlink" href="#csv" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id45">
+<caption><span class="caption-number">表 2.9 </span><span class="caption-text">CSVテーブル</span><a class="headerlink" href="#id45" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -577,19 +577,19 @@
 <td><p>表示</p></td>
 </tr>
 <tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> CSVファイルから読む
-   <span class="nc">:header-rows:</span> <span class="nf">1</span>
-   <span class="nc">:file:</span> <span class="nf">csv-table.csv</span>
+   <span class="nc">:header-rows:</span> 1
+   <span class="nc">:file:</span> csv-table.csv
 
 <span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> 直接書く
-   <span class="nc">:header:</span> <span class="nf">&quot;head 1&quot;, &quot;head 2&quot;, &quot;head 3&quot;</span>
+   <span class="nc">:header:</span> &quot;head 1&quot;, &quot;head 2&quot;, &quot;head 3&quot;
 
    item1, item2, item3
    &quot;item 1&quot;, &quot;item 2&quot;, &quot;item 3&quot;
 </pre></div>
 </div>
 </td>
-<td><table class="docutils align-default" id="id45">
-<caption><span class="caption-number">表 2.10 </span><span class="caption-text">CSVファイルから読む</span><a class="headerlink" href="#id45" title="このテーブルへのパーマリンク">¶</a></caption>
+<td><table class="docutils align-default" id="id46">
+<caption><span class="caption-number">表 2.10 </span><span class="caption-text">CSVファイルから読む</span><a class="headerlink" href="#id46" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -608,8 +608,8 @@
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id46">
-<caption><span class="caption-number">表 2.11 </span><span class="caption-text">直接書く</span><a class="headerlink" href="#id46" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id47">
+<caption><span class="caption-number">表 2.11 </span><span class="caption-text">直接書く</span><a class="headerlink" href="#id47" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -638,9 +638,9 @@
 </table>
 </div>
 <div class="section" id="id12">
-<h3><a class="toc-backref" href="#id80">2.2.10.3. シンプルテーブル</a><a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id49">
-<caption><span class="caption-number">表 2.14 </span><span class="caption-text">シンプルテーブル</span><a class="headerlink" href="#id49" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3><a class="toc-backref" href="#id82"><span class="section-number">2.2.10.3. </span>シンプルテーブル</a><a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id50">
+<caption><span class="caption-number">表 2.14 </span><span class="caption-text">シンプルテーブル</span><a class="headerlink" href="#id50" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -688,9 +688,9 @@
 </div>
 </div>
 <div class="section" id="id13">
-<h2><a class="toc-backref" href="#id81">2.2.11. 図</a><a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id50">
-<caption><span class="caption-number">表 2.15 </span><span class="caption-text">図</span><a class="headerlink" href="#id50" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id83"><span class="section-number">2.2.11. </span>図</a><a class="headerlink" href="#id13" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id51">
+<caption><span class="caption-number">表 2.15 </span><span class="caption-text">図</span><a class="headerlink" href="#id51" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -700,16 +700,16 @@
 <td><p>表示</p></td>
 </tr>
 <tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/sample.png
-   <span class="nc">:width:</span> <span class="nf">240</span>
-   <span class="nc">:align:</span> <span class="nf">center</span>
+   <span class="nc">:width:</span> 240
+   <span class="nc">:align:</span> center
 
    画像サンプル
 </pre></div>
 </div>
 </td>
-<td><div class="figure align-center" id="id51">
+<td><div class="figure align-center" id="id52">
 <a class="reference internal image-reference" href="../_images/sample.png"><img alt="../_images/sample.png" src="../_images/sample.png" style="width: 240px;" /></a>
-<p class="caption"><span class="caption-number">図 2.2 </span><span class="caption-text">画像サンプル</span><a class="headerlink" href="#id51" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-number">図 2.3 </span><span class="caption-text">画像サンプル</span><a class="headerlink" href="#id52" title="この画像へのパーマリンク">¶</a></p>
 </div>
 </td>
 </tr>
@@ -717,9 +717,9 @@
 </table>
 </div>
 <div class="section" id="id14">
-<h2><a class="toc-backref" href="#id82">2.2.12. コードブロック</a><a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id52">
-<caption><span class="caption-number">表 2.16 </span><span class="caption-text">コードブロック</span><a class="headerlink" href="#id52" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id84"><span class="section-number">2.2.12. </span>コードブロック</a><a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id53">
+<caption><span class="caption-number">表 2.16 </span><span class="caption-text">コードブロック</span><a class="headerlink" href="#id53" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -753,11 +753,11 @@
 </table>
 </div>
 <div class="section" id="id15">
-<h2><a class="toc-backref" href="#id83">2.2.13. ラベル・リンク</a><a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id85"><span class="section-number">2.2.13. </span>ラベル・リンク</a><a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">_label:</span></code>で任意の場所にラベルをつけ、<code class="docutils literal notranslate"><span class="pre">label_</span></code>として参照する。セクション・図表の直前にラベルをつけ、<code class="docutils literal notranslate"><span class="pre">:ref:</span></code>、<code class="docutils literal notranslate"><span class="pre">:numref:</span></code>で参照することで、各セクションや図表番号への参照を作れる。</p>
 <p>全てのセクション、図表にラベルを作りたいところだが、割と労力なので、参照が必要になった場合とする。名前は一意にする必要があるので、「セクション１名-ラベル」あたりになる。</p>
-<table class="docutils align-default" id="id53">
-<caption><span class="caption-number">表 2.17 </span><span class="caption-text">ラベル、ref、numref</span><a class="headerlink" href="#id53" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id54">
+<caption><span class="caption-number">表 2.17 </span><span class="caption-text">ラベル、ref、numref</span><a class="headerlink" href="#id54" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -786,8 +786,8 @@ section_label_ でラベルを参照する。これは文章の任意の場所�
 <span class="p">..</span> <span class="nt">_figure_label:</span>
 
 <span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/sample.png
-   <span class="nc">:width:</span> <span class="nf">25%</span>
-   <span class="nc">:align:</span> <span class="nf">center</span>
+   <span class="nc">:width:</span> 25%
+   <span class="nc">:align:</span> center
 
    画像サンプル
 
@@ -801,17 +801,17 @@ figure_label_ は図につけたラベルで、 <span class="s">``conf.py``</spa
 <p><a class="reference internal" href="#section-label">section_label</a>でラベルを参照する。これは文章の任意の場所のラベルを参照する。同じファイル内のみの参照する。</p>
 <p><a class="reference internal" href="#section-label">セクション</a>と埋め込みURL記法を用いて、任意の文字列でリンクを貼れる。</p>
 <p>ラベルがセクションに付いている場合、<code class="docutils literal notranslate"><span class="pre">:ref:`section_label`</span></code>とすることで<a class="reference internal" href="#style-guide-section"><span class="std std-ref">セクション</span></a>にリンクを貼れる（表内にセクションが作れないので、本文にラベルを作ってます）。</p>
-<div class="figure align-center" id="id54">
+<div class="figure align-center" id="id55">
 <span id="figure-label"></span><a class="reference internal image-reference" href="../_images/sample.png"><img alt="../_images/sample.png" src="../_images/sample.png" style="width: 25%;" /></a>
-<p class="caption"><span class="caption-number">図 2.3 </span><span class="caption-text">画像サンプル</span><a class="headerlink" href="#id54" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-number">図 2.4 </span><span class="caption-text">画像サンプル</span><a class="headerlink" href="#id55" title="この画像へのパーマリンク">¶</a></p>
 </div>
-<p><a class="reference internal" href="#figure-label">figure_label</a>は図につけたラベルで、<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>で<code class="docutils literal notranslate"><span class="pre">nummfig</span> <span class="pre">=</span> <span class="pre">True</span></code>としていれば、<code class="docutils literal notranslate"><span class="pre">:numref:`figure_label`</span></code>とすることで、<a class="reference internal" href="#figure-label"><span class="std std-numref">図 2.3</span></a>にリンクを貼れる。</p>
+<p><a class="reference internal" href="#figure-label">figure_label</a>は図につけたラベルで、<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>で<code class="docutils literal notranslate"><span class="pre">nummfig</span> <span class="pre">=</span> <span class="pre">True</span></code>としていれば、<code class="docutils literal notranslate"><span class="pre">:numref:`figure_label`</span></code>とすることで、<a class="reference internal" href="#figure-label"><span class="std std-numref">図 2.4</span></a>にリンクを貼れる。</p>
 </td>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id55">
-<caption><span class="caption-number">表 2.18 </span><span class="caption-text">別文章へのリンクと、ダウンロードリンク</span><a class="headerlink" href="#id55" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id56">
+<caption><span class="caption-number">表 2.18 </span><span class="caption-text">別文章へのリンクと、ダウンロードリンク</span><a class="headerlink" href="#id56" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -827,13 +827,13 @@ figure_label_ は図につけたラベルで、 <span class="s">``conf.py``</spa
 </div>
 </td>
 <td><p>別原稿へのリンクは<a class="reference internal" href="basic.html"><span class="doc">基本設定</span></a>と記述す。</p>
-<p><a class="reference download internal" download="" href="../_downloads/e5bf247812519b42550b73776da1f37d/style-guide.rst"><code class="xref download docutils literal notranslate"><span class="pre">style-guide.rst</span></code></a>とすることで、ダウンロード用のリンクを作成できる。</p>
+<p><a class="reference download internal" download="" href="../_downloads/5838824f5497a2bea9b57ce280be15c2/style-guide.rst"><code class="xref download docutils literal notranslate"><span class="pre">style-guide.rst</span></code></a>とすることで、ダウンロード用のリンクを作成できる。</p>
 </td>
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id56">
-<caption><span class="caption-number">表 2.19 </span><span class="caption-text">ハイパーリンク</span><a class="headerlink" href="#id56" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id57">
+<caption><span class="caption-number">表 2.19 </span><span class="caption-text">ハイパーリンク</span><a class="headerlink" href="#id57" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -871,8 +871,8 @@ Sphinx4_ というハイパーリンクターゲットを同時に作成でき�
 </tr>
 </tbody>
 </table>
-<table class="docutils align-default" id="id57">
-<caption><span class="caption-number">表 2.20 </span><span class="caption-text">インライン内部ターゲット</span><a class="headerlink" href="#id57" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id58">
+<caption><span class="caption-number">表 2.20 </span><span class="caption-text">インライン内部ターゲット</span><a class="headerlink" href="#id58" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -896,9 +896,9 @@ Sphinx4_ というハイパーリンクターゲットを同時に作成でき�
 </table>
 </div>
 <div class="section" id="id18">
-<h2><a class="toc-backref" href="#id84">2.2.14. 数式</a><a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id58">
-<caption><span class="caption-number">表 2.21 </span><span class="caption-text">数式</span><a class="headerlink" href="#id58" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id86"><span class="section-number">2.2.14. </span>数式</a><a class="headerlink" href="#id18" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id59">
+<caption><span class="caption-number">表 2.21 </span><span class="caption-text">数式</span><a class="headerlink" href="#id59" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -927,9 +927,9 @@ Sphinx4_ というハイパーリンクターゲットを同時に作成でき�
 </table>
 </div>
 <div class="section" id="id19">
-<h2><a class="toc-backref" href="#id85">2.2.15. 注釈</a><a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id59">
-<caption><span class="caption-number">表 2.22 </span><span class="caption-text">注釈</span><a class="headerlink" href="#id59" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id87"><span class="section-number">2.2.15. </span>注釈</a><a class="headerlink" href="#id19" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id60">
+<caption><span class="caption-number">表 2.22 </span><span class="caption-text">注釈</span><a class="headerlink" href="#id60" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -961,9 +961,9 @@ Sphinx4_ というハイパーリンクターゲットを同時に作成でき�
 </table>
 </div>
 <div class="section" id="id20">
-<h2><a class="toc-backref" href="#id86">2.2.16. 脚注</a><a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id60">
-<caption><span class="caption-number">表 2.23 </span><span class="caption-text">脚注</span><a class="headerlink" href="#id60" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id88"><span class="section-number">2.2.16. </span>脚注</a><a class="headerlink" href="#id20" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id61">
+<caption><span class="caption-number">表 2.23 </span><span class="caption-text">脚注</span><a class="headerlink" href="#id61" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -999,9 +999,9 @@ Sphinx4_ というハイパーリンクターゲットを同時に作成でき�
 </table>
 </div>
 <div class="section" id="id26">
-<h2><a class="toc-backref" href="#id87">2.2.17. 用語集</a><a class="headerlink" href="#id26" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id61">
-<caption><span class="caption-number">表 2.24 </span><span class="caption-text">用語集</span><a class="headerlink" href="#id61" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id89"><span class="section-number">2.2.17. </span>用語集</a><a class="headerlink" href="#id26" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id62">
+<caption><span class="caption-number">表 2.24 </span><span class="caption-text">用語集</span><a class="headerlink" href="#id62" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1041,12 +1041,46 @@ glossary用のファイルを作る。
 </table>
 </div>
 <div class="section" id="id27">
-<h2><a class="toc-backref" href="#id88">2.2.18. 使用すると表現が増す構文</a><a class="headerlink" href="#id27" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>使用しなくても記述できるが、使用すると表現力が増す構文。慣れたら使う。慣れないうちは気にしない。</p>
+<h2><a class="toc-backref" href="#id90"><span class="section-number">2.2.18. </span>置換</a><a class="headerlink" href="#id27" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id63">
+<caption><span class="caption-number">表 2.25 </span><span class="caption-text">置換</span><a class="headerlink" href="#id63" title="このテーブルへのパーマリンク">¶</a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>テキスト</p></td>
+<td><p>表示</p></td>
+</tr>
+<tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>以下のように書いて定義し |today| とかいて利用すると、置換される。
+
+<span class="p">..</span> <span class="nt">|today|</span> <span class="ow">replace</span><span class="p">::</span> 2019-08-03
+
+画像 |image| もインラインで埋め込める（使うか？）。
+
+<span class="p">..</span> <span class="nt">|image|</span> <span class="ow">image</span><span class="p">::</span> images/sample.png
+           <span class="nc">:width:</span> 10%
+
+ただし、同じファイルのみ。共通で使う場合は、定義をまとめてincludeするとか細工が必要
+（動作未検証）。
+</pre></div>
+</div>
+</td>
+<td><p>以下のように書いて定義し2019-08-03とかいて利用すると、置換される。</p>
+<p>画像<a class="reference internal" href="../_images/sample.png"><img alt="image" src="../_images/sample.png" style="width: 10%;" /></a>もインラインで埋め込める（使うか？）。</p>
+<p>ただし、同じファイルのみ。共通で使う場合は、定義をまとめてincludeするとか細工が必要（動作未検証）。</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="id28">
-<h3><a class="toc-backref" href="#id89">2.2.18.1. リテラルブロック</a><a class="headerlink" href="#id28" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id62">
-<caption><span class="caption-number">表 2.25 </span><span class="caption-text">リテラルブロック</span><a class="headerlink" href="#id62" title="このテーブルへのパーマリンク">¶</a></caption>
+<h2><a class="toc-backref" href="#id91"><span class="section-number">2.2.19. </span>使用すると表現が増す構文</a><a class="headerlink" href="#id28" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>使用しなくても記述できるが、使用すると表現力が増す構文。慣れたら使う。慣れないうちは気にしない。</p>
+<div class="section" id="id29">
+<h3><a class="toc-backref" href="#id92"><span class="section-number">2.2.19.1. </span>リテラルブロック</a><a class="headerlink" href="#id29" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id64">
+<caption><span class="caption-number">表 2.26 </span><span class="caption-text">リテラルブロック</span><a class="headerlink" href="#id64" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1079,10 +1113,10 @@ glossary用のファイルを作る。
 </tbody>
 </table>
 </div>
-<div class="section" id="id29">
-<h3><a class="toc-backref" href="#id90">2.2.18.2. 引用リテラルブロック</a><a class="headerlink" href="#id29" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id63">
-<caption><span class="caption-number">表 2.26 </span><span class="caption-text">引用リテラルブロック</span><a class="headerlink" href="#id63" title="このテーブルへのパーマリンク">¶</a></caption>
+<div class="section" id="id30">
+<h3><a class="toc-backref" href="#id93"><span class="section-number">2.2.19.2. </span>引用リテラルブロック</a><a class="headerlink" href="#id30" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id65">
+<caption><span class="caption-number">表 2.27 </span><span class="caption-text">引用リテラルブロック</span><a class="headerlink" href="#id65" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1114,12 +1148,12 @@ glossary用のファイルを作る。
 </tbody>
 </table>
 </div>
-<div class="section" id="id30">
-<h3><a class="toc-backref" href="#id91">2.2.18.3. フィールドリスト</a><a class="headerlink" href="#id30" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id31">
+<h3><a class="toc-backref" href="#id94"><span class="section-number">2.2.19.3. </span>フィールドリスト</a><a class="headerlink" href="#id31" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>項目と内容で簡単に小さい表が作れるが、レンダリング時の表示が微妙で、使いどころが難しい。テーマによって表示がかなり異なる。</p>
 <p>...しかし、あっれー、サンプルとも表示がだいぶ異なる？なんでや...</p>
-<table class="docutils align-default" id="id64">
-<caption><span class="caption-number">表 2.27 </span><span class="caption-text">フィールドリスト</span><a class="headerlink" href="#id64" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id66">
+<caption><span class="caption-number">表 2.28 </span><span class="caption-text">フィールドリスト</span><a class="headerlink" href="#id66" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1128,11 +1162,11 @@ glossary用のファイルを作る。
 <tr class="row-odd"><td><p>テキスト</p></td>
 <td><p>表示</p></td>
 </tr>
-<tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:Date:</span> <span class="nf">2019-7-14</span>
-<span class="nc">:Version:</span> <span class="nf">0.1.0</span>
-<span class="nc">:OS:</span> <span class="nf">Windows 10 1809 64-bit</span>
-<span class="nc">:Python:</span> <span class="nf">v3.7.4 (64-bit)</span>
-<span class="nc">:Sphinx:</span> <span class="nf">v2.1.2</span>
+<tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:Date:</span> 2019-7-14
+<span class="nc">:Version:</span> 0.1.0
+<span class="nc">:OS:</span> Windows 10 1809 64-bit
+<span class="nc">:Python:</span> v3.7.4 (64-bit)
+<span class="nc">:Sphinx:</span> v2.1.2
 </pre></div>
 </div>
 </td>
@@ -1158,10 +1192,10 @@ glossary用のファイルを作る。
 </tbody>
 </table>
 </div>
-<div class="section" id="id31">
-<h3><a class="toc-backref" href="#id92">2.2.18.4. オプションリスト</a><a class="headerlink" href="#id31" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id65">
-<caption><span class="caption-number">表 2.28 </span><span class="caption-text">オプションリスト</span><a class="headerlink" href="#id65" title="このテーブルへのパーマリンク">¶</a></caption>
+<div class="section" id="id32">
+<h3><a class="toc-backref" href="#id95"><span class="section-number">2.2.19.4. </span>オプションリスト</a><a class="headerlink" href="#id32" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id67">
+<caption><span class="caption-number">表 2.29 </span><span class="caption-text">オプションリスト</span><a class="headerlink" href="#id67" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1192,12 +1226,12 @@ glossary用のファイルを作る。
 </tbody>
 </table>
 </div>
-<div class="section" id="id32">
-<h3><a class="toc-backref" href="#id93">2.2.18.5. 置換変数</a><a class="headerlink" href="#id32" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id33">
+<h3><a class="toc-backref" href="#id96"><span class="section-number">2.2.19.5. </span>置換変数</a><a class="headerlink" href="#id33" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>あまり使わないような気がする。</p>
 <p>Read the Docsテーマのサイドバーに出ているのはversion。releaseがフルバージョンで、使い分けてもいいし、同じでもよい。</p>
-<table class="docutils align-default" id="id66">
-<caption><span class="caption-number">表 2.29 </span><span class="caption-text">置換変数</span><a class="headerlink" href="#id66" title="このテーブルへのパーマリンク">¶</a></caption>
+<table class="docutils align-default" id="id68">
+<caption><span class="caption-number">表 2.30 </span><span class="caption-text">置換変数</span><a class="headerlink" href="#id68" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1206,9 +1240,9 @@ glossary用のファイルを作る。
 <tr class="row-odd"><td><p>テキスト</p></td>
 <td><p>表示</p></td>
 </tr>
-<tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:リリース:</span> <span class="nf">|release|</span>
-<span class="nc">:バージョン:</span> <span class="nf">|version|</span>
-<span class="nc">:日付:</span> <span class="nf">|today|</span>
+<tr class="row-even"><td><div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:リリース:</span> |release|
+<span class="nc">:バージョン:</span> |version|
+<span class="nc">:日付:</span> |today|
 </pre></div>
 </div>
 </td>
@@ -1220,7 +1254,7 @@ glossary用のファイルを作る。
 <dd class="field-even"><p>0.1.0</p>
 </dd>
 <dt class="field-odd">日付</dt>
-<dd class="field-odd"><p>2019年07月18日</p>
+<dd class="field-odd"><p>2019-08-03</p>
 </dd>
 </dl>
 </td>
@@ -1228,22 +1262,22 @@ glossary用のファイルを作る。
 </tbody>
 </table>
 </div>
-<div class="section" id="id33">
-<h3><a class="toc-backref" href="#id94">2.2.18.6. コメント（出力時に表示されない文章）</a><a class="headerlink" href="#id33" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id34">
+<h3><a class="toc-backref" href="#id97"><span class="section-number">2.2.19.6. </span>コメント（出力時に表示されない文章）</a><a class="headerlink" href="#id34" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>使う場面がありそうで、正式な文章ではあまり出番がなさそう。reST/Sphinxの構文的に補足する必要があったときとか。</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">.. の後に続けて書くとコメント文章になる。</span>
 <span class="cp">   改行しても、続きでコメントになる。</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id34">
-<h3><a class="toc-backref" href="#id95">2.2.18.7. インクルード</a><a class="headerlink" href="#id34" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="section" id="id35">
+<h3><a class="toc-backref" href="#id98"><span class="section-number">2.2.19.7. </span>インクルード</a><a class="headerlink" href="#id35" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> path_to_rst.txt
 
 とするとreSTファイルとして解釈してページ内に挿入する。
 
 <span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> path_to_rst.txt
-   <span class="nc">:language:</span> <span class="nf">rst</span>
+   <span class="nc">:language:</span> rst
 
 とするとファイルの内容をリテラルブロックとして、ページ内に挿入する。
 オプションで取り込む行などを指定できるが、変更に追従するのが大変なので、
@@ -1252,9 +1286,9 @@ glossary用のファイルを作る。
 </div>
 </div>
 <div class="section" id="raw">
-<h3><a class="toc-backref" href="#id96">2.2.18.8. raw</a><a class="headerlink" href="#raw" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<table class="docutils align-default" id="id67">
-<caption><span class="caption-number">表 2.30 </span><span class="caption-text">raw</span><a class="headerlink" href="#id67" title="このテーブルへのパーマリンク">¶</a></caption>
+<h3><a class="toc-backref" href="#id99"><span class="section-number">2.2.19.8. </span>raw</a><a class="headerlink" href="#raw" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<table class="docutils align-default" id="id69">
+<caption><span class="caption-number">表 2.31 </span><span class="caption-text">raw</span><a class="headerlink" href="#id69" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1275,8 +1309,8 @@ glossary用のファイルを作る。
 </table>
 </div>
 </div>
-<div class="section" id="id35">
-<h2><a class="toc-backref" href="#id97">2.2.19. 参考リンク</a><a class="headerlink" href="#id35" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id36">
+<h2><a class="toc-backref" href="#id100"><span class="section-number">2.2.20. </span>参考リンク</a><a class="headerlink" href="#id36" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>reStructuredText Documentation:<a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></p></li>
 <li><p>Docutils（reST）マニュアル:<a class="reference external" href="https://docutils.sphinx-users.jp/">https://docutils.sphinx-users.jp/</a></p></li>

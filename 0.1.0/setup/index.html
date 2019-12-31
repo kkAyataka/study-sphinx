@@ -91,14 +91,18 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. 環境構築</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#sphinx">1.1. Sphinx環境の構築</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">1.1.1. 日本語拡張の設定</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plantuml">1.1.2. PlantUML</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id3">1.1.2.1. 参考</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">1.2. エディタ環境</a><ul>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">1.2. エディタ環境</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#visual-studio-codepython">1.2.1. Visual Studio CodeのPython環境について</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">1.3. その他</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">1.4. 参考リンク</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">1.3. その他</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">1.4. 参考リンク</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../guide/index.html">2. Guide</a></li>
@@ -147,7 +151,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>1. 環境構築</li>
+      <li><span class="section-number">1. </span>環境構築</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -167,9 +171,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>1. 環境構築<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">1. </span>環境構築<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="section" id="sphinx">
-<h2>1.1. Sphinx環境の構築<a class="headerlink" href="#sphinx" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><span class="section-number">1.1. </span>Sphinx環境の構築<a class="headerlink" href="#sphinx" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>Python 3のインストール</p>
 <ul>
@@ -189,7 +193,7 @@
 <ul class="simple">
 <li><p>Read the Docsテーマのインストール</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx_rtd_theme</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">rtd</span><span class="o">-</span><span class="n">theme</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -208,15 +212,57 @@
 </li>
 </ul>
 <div class="section" id="id2">
-<h3>1.1.1. 日本語拡張の設定<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.1.1. </span>日本語拡張の設定<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>通常の設定では段落中で改行すると、改行部分にスペースが入る。日本語ドキュメントではこの動作は好ましくないため、<a class="reference external" href="https://sphinx-users.jp/index.html">Sphinx-Users.jp</a>で公開されている日本語拡張を入れる。</p>
 <p><a class="reference external" href="https://sphinx-users.jp/reverse-dict/html/japanese.html">https://sphinx-users.jp/reverse-dict/html/japanese.html</a>を参考にファイルをダウンロードして、<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>を設定する。</p>
 </div>
+<div class="section" id="plantuml">
+<h3><span class="section-number">1.1.2. </span>PlantUML<a class="headerlink" href="#plantuml" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="figure align-center" id="id7">
+<p class="plantuml">
+<img src="../_images/plantuml-2ff35ee3dc8ca708f0e85c651eabe201b1744ac9.png" alt="skinparam componentStyle uml2
+[Sphinx] --&gt; [PlantUML]"/>
+</p>
+<p class="caption"><span class="caption-number">図 1.1 </span><span class="caption-text">PlantUML</span><a class="headerlink" href="#id7" title="この画像へのパーマリンク">¶</a></p>
+</div>
+<p>テキストベースでUMLベースを描けるようになる。軽快に使えてなかなか楽しい。図を残す目的としては良いと思う。ただ、図を使って考えるのには向いてないので、あくまでドキュメントとして残す用途。</p>
+<ul class="simple">
+<li><p>javaをインストールする</p>
+<ul>
+<li><p>PlantUMLはJavaアプリ</p></li>
+<li><p><a class="reference external" href="https://adoptopenjdk.net/?variant=openjdk11&amp;jvmVariant=openj9">AdoptOpenJDK</a>のOpenJ9版を使用</p></li>
+</ul>
+</li>
+<li><p>Graphvisをインストールする</p>
+<ul>
+<li><p><a class="reference external" href="https://www.graphviz.org/download/">https://www.graphviz.org/download/</a></p></li>
+<li><p>Windowsはインストーラーだが、MacではHomebrewなどを経由する</p></li>
+</ul>
+</li>
+<li><p>PlauntUMLをダウンロードして適当に配置</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">~/.local/bin/pluntuml.jar</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sphinxcontrib-plantuml</span></code>をインストールする</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">plantuml</span>
+</pre></div>
 </div>
 <div class="section" id="id3">
-<h2>1.2. エディタ環境<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-number">表 1.1 </span><span class="caption-text">エディタ</span><a class="headerlink" href="#id6" title="このテーブルへのパーマリンク">¶</a></caption>
+<h4><span class="section-number">1.1.2.1. </span>参考<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h4>
+<ul class="simple">
+<li><p>PlantUML:<a class="reference external" href="https://plantuml.com/">https://plantuml.com/</a></p></li>
+<li><p>Graphviz:<a class="reference external" href="https://www.graphviz.org/">https://www.graphviz.org/</a></p></li>
+<li><p>sphinxcontrib-plantuml:<a class="reference external" href="https://pypi.org/project/sphinxcontrib-plantuml/">https://pypi.org/project/sphinxcontrib-plantuml/</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2><span class="section-number">1.2. </span>エディタ環境<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-number">表 1.1 </span><span class="caption-text">エディタ</span><a class="headerlink" href="#id8" title="このテーブルへのパーマリンク">¶</a></caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -253,7 +299,7 @@
 </tbody>
 </table>
 <div class="section" id="visual-studio-codepython">
-<h3>1.2.1. Visual Studio CodeのPython環境について<a class="headerlink" href="#visual-studio-codepython" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><span class="section-number">1.2.1. </span>Visual Studio CodeのPython環境について<a class="headerlink" href="#visual-studio-codepython" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>ワークスペースの設定（<code class="docutils literal notranslate"><span class="pre">.vscode/settings.json</span></code>）を以下のようにすることで、任意のバージョンのPythonを使用することができる。SphinxではPython 3を使用したいため、Pyhton 2と併用の環境で設定する。</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
   <span class="nt">&quot;python.pythonPath&quot;</span><span class="p">:</span> <span class="s2">&quot;C:\\Users\\kkAyataka\\AppData\\Local\\Programs\\Python\\Python37\\python.exe&quot;</span><span class="p">,</span>
@@ -266,8 +312,8 @@
 <p>Pythonのパスを指定することで、任意のバージョンのPythonを使用することができる。また、統合ターミナルの環境変数を設定することで、ターミナルで使用するPython環境もそろえることができる。</p>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>1.3. その他<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id5">
+<h2><span class="section-number">1.3. </span>その他<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>reSTファイルの行末はlf固定にする</p>
 <ul>
@@ -287,10 +333,16 @@
 </li>
 </ul>
 </li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">subtree</span></code>による構成は使用しない</p>
+<ul>
+<li><p>GitHub Pagesを前提にした場合、<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">subtree</span></code>を利用して出力フォルダと<code class="docutils literal notranslate"><span class="pre">gh-pages</span></code>ブランチを紐づける方法があるが、この方法については採用しない</p></li>
+<li><p>公開用ファイルが<code class="docutils literal notranslate"><span class="pre">master</span></code>ブランチに見えるためで、GitHub上での検索が汚れるため</p></li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h2>1.4. 参考リンク<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="id6">
+<h2><span class="section-number">1.4. </span>参考リンク<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>Python:<a class="reference external" href="https://www.python.org/">https://www.python.org/</a></p></li>
 <li><p>Read the Docsテーマ:<a class="reference external" href="https://github.com/rtfd/sphinx_rtd_theme">https://github.com/rtfd/sphinx_rtd_theme</a></p></li>

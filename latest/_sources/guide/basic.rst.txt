@@ -88,6 +88,14 @@ Read the Docs Sphinxテーマの有効化
 
 .. code-block:: python
 
+   # conf.py
+
+   import sphinx_rtd_theme
+
+   extensions = [
+     "sphinx_rtd_theme",
+   ]
+
    # html
    html_theme = 'sphinx_rtd_theme'
    html_style = 'css/rtd_custom.css'
@@ -109,8 +117,8 @@ Read the Docs Sphinxテーマの有効化
      max-width: none;
    }
 
-   /* h1～h3に下線を引く*/
-   h1, h2, h3 {
+   /* h1～h4に下線を引く*/
+   h1, h2, h3, h4 {
      border-bottom: 1px solid #2980B9
    }
 
@@ -119,6 +127,41 @@ Read the Docs Sphinxテーマの有効化
    .wy-table-responsive table td {
      white-space: normal;
    }
+
+
+PlantUMLの有効化
+================================================================================
+
+.. uml::
+   :caption: PlantUML
+   :align: center
+
+   skinparam componentStyle uml2
+   [Sphinx] --> [PlantUML]
+
+以下のように記述すると、上記のような図になる。
+
+.. code-block:: rest
+
+   .. uml::
+      :caption: PlantUML
+      :align: center
+
+      skinparam componentStyle uml2
+      [Sphinx] --> [PlantUML]
+
+``pip install sphinxcontrib-plantuml`` で拡張機能をインストールし、``conf.py`` を設定することで有効化する。
+PlantUMLを動かすため、事前にJavaやGraphvizのインストールも必要。
+
+.. code-block:: python
+
+   # conf.py
+
+   extensions = [
+     'sphinxcontrib.plantuml'
+   ]
+
+   plantuml = 'java -jar /path/to/plantuml.jar'
 
 
 拡張リテラル
@@ -153,6 +196,10 @@ PDFファイルを作る場合は使用を控える。
    .red {
      color: red;
    }
+
+
+上記の準備をした上で、インラインリテラルとして使用する。
+``:strike:`取り消し線``` で取り消し線がひかれ、``:red:`赤字``` で赤字になる。
 
 
 latexpdf出力の調整

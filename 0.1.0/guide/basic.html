@@ -98,13 +98,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#id4">2.1.4.1. テーマのカスタマイズ</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">2.1.5. 拡張リテラル</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#latexpdf">2.1.6. latexpdf出力の調整</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id6">2.1.6.1. 図の表示位置</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id7">2.1.6.2. 大きな表の改ページ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plantuml">2.1.5. PlantUMLの有効化</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">2.1.6. 拡張リテラル</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latexpdf">2.1.7. latexpdf出力の調整</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">2.1.7.1. 図の表示位置</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">2.1.7.2. 大きな表の改ページ</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">2.1.7. 参考リンク</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2.1.8. 参考リンク</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="style-guide.html">2.2. Style Guide</a></li>
@@ -155,9 +156,9 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">2. Guide</a> &raquo;</li>
+          <li><a href="index.html"><span class="section-number">2. </span>Guide</a> &raquo;</li>
         
-      <li>2.1. 基本設定</li>
+      <li><span class="section-number">2.1. </span>基本設定</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -177,29 +178,30 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>2.1. 基本設定<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<h1><span class="section-number">2.1. </span>基本設定<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <div class="contents local topic" id="id2">
 <ul class="simple">
-<li><p><a class="reference internal" href="#sphinx-quickstart" id="id10">sphinx-quickstart</a></p></li>
-<li><p><a class="reference internal" href="#html" id="id11">htmlでのセクション番号の有効化</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id12">図表番号の有効化</a></p></li>
-<li><p><a class="reference internal" href="#read-the-docs-sphinx" id="id13">Read the Docs Sphinxテーマの有効化</a></p>
+<li><p><a class="reference internal" href="#sphinx-quickstart" id="id11">sphinx-quickstart</a></p></li>
+<li><p><a class="reference internal" href="#html" id="id12">htmlでのセクション番号の有効化</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id13">図表番号の有効化</a></p></li>
+<li><p><a class="reference internal" href="#read-the-docs-sphinx" id="id14">Read the Docs Sphinxテーマの有効化</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id4" id="id14">テーマのカスタマイズ</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id15">テーマのカスタマイズ</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id5" id="id15">拡張リテラル</a></p></li>
-<li><p><a class="reference internal" href="#latexpdf" id="id16">latexpdf出力の調整</a></p>
+<li><p><a class="reference internal" href="#plantuml" id="id16">PlantUMLの有効化</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id17">拡張リテラル</a></p></li>
+<li><p><a class="reference internal" href="#latexpdf" id="id18">latexpdf出力の調整</a></p>
 <ul>
-<li><p><a class="reference internal" href="#id6" id="id17">図の表示位置</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id18">大きな表の改ページ</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id19">図の表示位置</a></p></li>
+<li><p><a class="reference internal" href="#id7" id="id20">大きな表の改ページ</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id8" id="id19">参考リンク</a></p></li>
+<li><p><a class="reference internal" href="#id8" id="id21">参考リンク</a></p></li>
 </ul>
 </div>
 <div class="section" id="sphinx-quickstart">
-<h2><a class="toc-backref" href="#id10">2.1.1. sphinx-quickstart</a><a class="headerlink" href="#sphinx-quickstart" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id11"><span class="section-number">2.1.1. </span>sphinx-quickstart</a><a class="headerlink" href="#sphinx-quickstart" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>基本的にプロジェクト名等必須の項目以外はデフォルト設定で行う。</p>
 <p>旧バージョン（v1.8）から大幅に簡略化されている。拡張子やマスタードキュメントも自動で設定され、<code class="docutils literal notranslate"><span class="pre">index.rst</span></code>が使用される。また、Makefileも作成される。</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sphinx-quickstart.exe
@@ -243,33 +245,41 @@ where &quot;builder&quot; is one of the supported builders, e.g. html, latex or 
 </div>
 </div>
 <div class="section" id="html">
-<h2><a class="toc-backref" href="#id11">2.1.2. htmlでのセクション番号の有効化</a><a class="headerlink" href="#html" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id12"><span class="section-number">2.1.2. </span>htmlでのセクション番号の有効化</a><a class="headerlink" href="#html" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">toctree</span></code>のオプションで<code class="docutils literal notranslate"><span class="pre">:numbered:</span></code>を指定して、有効化する。最上位のマスタードキュメントのみに設定すればよい。</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
-   <span class="nc">:maxdepth:</span> <span class="nf">2</span>
-   <span class="nc">:caption:</span> <span class="nf">Contents:</span>
+   <span class="nc">:maxdepth:</span> 2
+   <span class="nc">:caption:</span> Contents:
    <span class="nc">:numbered:</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id3">
-<h2><a class="toc-backref" href="#id12">2.1.3. 図表番号の有効化</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id13"><span class="section-number">2.1.3. </span>図表番号の有効化</a><a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">conf.py</span></code>で<code class="docutils literal notranslate"><span class="pre">numfig</span></code>を有効化する。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># General</span>
-<span class="n">numfig</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">numfig</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="read-the-docs-sphinx">
-<h2><a class="toc-backref" href="#id13">2.1.4. Read the Docs Sphinxテーマの有効化</a><a class="headerlink" href="#read-the-docs-sphinx" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id14"><span class="section-number">2.1.4. </span>Read the Docs Sphinxテーマの有効化</a><a class="headerlink" href="#read-the-docs-sphinx" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code>でテーマをインストールし<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>でテーマを指定する。テーマは少しカスタマイズして使用するため、カスタム用のcssを読み込むようにも設定する。</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># html</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s2">&quot;sphinx_rtd_theme&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># html</span>
 <span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
 <span class="n">html_style</span> <span class="o">=</span> <span class="s1">&#39;css/rtd_custom.css&#39;</span>
 </pre></div>
 </div>
 <div class="section" id="id4">
-<h3><a class="toc-backref" href="#id14">2.1.4.1. テーマのカスタマイズ</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><a class="toc-backref" href="#id15"><span class="section-number">2.1.4.1. </span>テーマのカスタマイズ</a><a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>次のようにcssファイルを準備する。設定内容はコメントを参照。<code class="docutils literal notranslate"><span class="pre">_static</span></code>フォルダ以下に、<code class="docutils literal notranslate"><span class="pre">_static/css/rtd_custom.css</span></code>として保存し、上記のとおり、<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>で設定して、有効化する。</p>
 <div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">import</span> <span class="nt">url</span><span class="o">(</span><span class="s2">&quot;theme.css&quot;</span><span class="o">)</span><span class="p">;</span>
 
@@ -278,8 +288,8 @@ where &quot;builder&quot; is one of the supported builders, e.g. html, latex or 
   <span class="k">max-width</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="c">/* h1～h3に下線を引く*/</span>
-<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span> <span class="p">{</span>
+<span class="c">/* h1～h4に下線を引く*/</span>
+<span class="nt">h1</span><span class="o">,</span> <span class="nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class="o">,</span> <span class="nt">h4</span> <span class="p">{</span>
   <span class="k">border-bottom</span><span class="p">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#2980B9</span>
 <span class="p">}</span>
 
@@ -292,8 +302,37 @@ where &quot;builder&quot; is one of the supported builders, e.g. html, latex or 
 </div>
 </div>
 </div>
+<div class="section" id="plantuml">
+<h2><a class="toc-backref" href="#id16"><span class="section-number">2.1.5. </span>PlantUMLの有効化</a><a class="headerlink" href="#plantuml" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="figure align-center" id="id9">
+<p class="plantuml">
+<img src="../_images/plantuml-081f5a5045fccfa0a7d4c8133102ea4e32e3a860.png" alt="skinparam componentStyle uml2
+[Sphinx] --&gt; [PlantUML]"/>
+</p>
+<p class="caption"><span class="caption-number">図 2.1 </span><span class="caption-text">PlantUML</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
+</div>
+<p>以下のように記述すると、上記のような図になる。</p>
+<div class="highlight-rest notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">uml</span><span class="p">::</span>
+   <span class="nc">:caption:</span> PlantUML
+   <span class="nc">:align:</span> center
+
+   skinparam componentStyle uml2
+   [Sphinx] --&gt; [PlantUML]
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinxcontrib-plantuml</span></code>で拡張機能をインストールし、<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>を設定することで有効化する。PlantUMLを動かすため、事前にJavaやGraphvizのインストールも必要。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># conf.py</span>
+
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;sphinxcontrib.plantuml&#39;</span>
+<span class="p">]</span>
+
+<span class="n">plantuml</span> <span class="o">=</span> <span class="s1">&#39;java -jar /path/to/plantuml.jar&#39;</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="id5">
-<h2><a class="toc-backref" href="#id15">2.1.5. 拡張リテラル</a><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id17"><span class="section-number">2.1.6. </span>拡張リテラル</a><a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p>取り消し線や文字色の変更は標準の機能にはないため、独自に定義する。</p>
 <p>ただし、htmlではうまくいくが、PDFでの取り扱いが難しいため、PDFファイルを作る場合は使用を控える。</p>
 <p>独自に<code class="docutils literal notranslate"><span class="pre">role</span></code>とcssを定義する。<code class="docutils literal notranslate"><span class="pre">role</span></code>はファイル毎に設定が必要なため、<code class="docutils literal notranslate"><span class="pre">conf.py</span></code>の<code class="docutils literal notranslate"><span class="pre">rst_prolog</span></code>を使って、reSTを埋め込む。</p>
@@ -316,11 +355,12 @@ where &quot;builder&quot; is one of the supported builders, e.g. html, latex or 
 <span class="p">}</span>
 </pre></div>
 </div>
+<p>上記の準備をした上で、インラインリテラルとして使用する。<code class="docutils literal notranslate"><span class="pre">:strike:`取り消し線`</span></code>で取り消し線がひかれ、<code class="docutils literal notranslate"><span class="pre">:red:`赤字`</span></code>で赤字になる。</p>
 </div>
 <div class="section" id="latexpdf">
-<h2><a class="toc-backref" href="#id16">2.1.6. latexpdf出力の調整</a><a class="headerlink" href="#latexpdf" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id18"><span class="section-number">2.1.7. </span>latexpdf出力の調整</a><a class="headerlink" href="#latexpdf" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id6">
-<h3><a class="toc-backref" href="#id17">2.1.6.1. 図の表示位置</a><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<h3><a class="toc-backref" href="#id19"><span class="section-number">2.1.7.1. </span>図の表示位置</a><a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>標準だと、ページ末で図が表示できない場合、図は次のページに行きつつ、余ったスペースに図の後の文章が挿入される。前後関係が崩れて読みにくいため、図と文章の順番が入れ替わらないように設定する。</p>
 <p><code class="docutils literal notranslate"><span class="pre">conf.py</span></code>に以下を記述すると防げる。</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">latex_elements</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;figure_align&#39;</span><span class="p">:</span><span class="s1">&#39;H&#39;</span><span class="p">}</span>
@@ -328,22 +368,22 @@ where &quot;builder&quot; is one of the supported builders, e.g. html, latex or 
 </div>
 </div>
 <div class="section" id="id7">
-<h3><a class="toc-backref" href="#id18">2.1.6.2. 大きな表の改ページ</a><a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<div class="figure align-center" id="id9">
+<h3><a class="toc-backref" href="#id20"><span class="section-number">2.1.7.2. </span>大きな表の改ページ</a><a class="headerlink" href="#id7" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<div class="figure align-center" id="id10">
 <img alt="../_images/pdf-broken-table.png" src="../_images/pdf-broken-table.png" />
-<p class="caption"><span class="caption-number">図 2.1 </span><span class="caption-text">表の表示崩れ</span><a class="headerlink" href="#id9" title="この画像へのパーマリンク">¶</a></p>
+<p class="caption"><span class="caption-number">図 2.2 </span><span class="caption-text">表の表示崩れ</span><a class="headerlink" href="#id10" title="この画像へのパーマリンク">¶</a></p>
 </div>
 <p>表に<code class="docutils literal notranslate"><span class="pre">:class:</span> <span class="pre">longtable</span></code>を明示することで、大きな表での改ページの崩れをを回避できる。ただし、1行そのものが大きく、1ページを超える場合は対処できない。</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">list-table</span><span class="p">::</span> 大きな表
-   <span class="nc">:header-rows:</span> <span class="nf">1</span>
-   <span class="nc">:class:</span> <span class="nf">longtable</span>
+   <span class="nc">:header-rows:</span> 1
+   <span class="nc">:class:</span> longtable
 </pre></div>
 </div>
 <p>標準設定だと、30行以下の表は途中で改ページされず、PDF化したときに表示が崩れる。30行以上だとLaTeXのlongtableが有効化されるため、うまく改ページされる。</p>
 </div>
 </div>
 <div class="section" id="id8">
-<h2><a class="toc-backref" href="#id19">2.1.7. 参考リンク</a><a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<h2><a class="toc-backref" href="#id21"><span class="section-number">2.1.8. </span>参考リンク</a><a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ul class="simple">
 <li><p>Read the Docs Sphinx Theme:<a class="reference external" href="https://github.com/readthedocs/sphinx_rtd_theme">https://github.com/readthedocs/sphinx_rtd_theme</a></p></li>
 </ul>
