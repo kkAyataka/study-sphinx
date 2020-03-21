@@ -1,9 +1,15 @@
 # VScode
-.vscode
-
-# Sphinx
-doc/_build
-doc/__pycache__
+.vscode/settings.json
 
 # tools
 tools/_gh-pages
+
+# Python
+.venv
+__pycache__
+
+# Sphinx
+doc/_build
+
+# Node.js
+node_modules
