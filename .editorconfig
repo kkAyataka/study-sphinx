@@ -9,9 +9,9 @@ indent_size = 4
 [*.rst]
 end_of_line = lf
 indent_style = space
-indent_size = 3
+indent_size = 2
 
-[*.html]
+[*.{html,js}]
 indent_style = space
 indent_size = 2
 
