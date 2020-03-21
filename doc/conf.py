@@ -37,7 +37,8 @@ version = '0.1.0'
 extensions = [
     'sphinx_rtd_theme',
     'sphinxcontrib.plantuml',
-    'japanesesupport'
+    'sphinxcontrib.xlsxtable',
+    'japanesesupport',
 ]
 
 # PlantUML
