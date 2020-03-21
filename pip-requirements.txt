@@ -1,0 +1,7 @@
+# Sphinx
+Sphinx
+Pillow
+sphinxcontrib-plantuml
+sphinxcontrib-xlsxtable
+sphinx-rtd-theme
+sphinx-material
