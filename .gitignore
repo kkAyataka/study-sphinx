@@ -2,7 +2,7 @@
 .vscode/settings.json
 
 # tools
-tools/_gh-pages
+scripts/_gh-pages
 
 # Python
 .venv
