@@ -218,7 +218,7 @@ latexpdf出力の調整
 大きな表の改ページ
 ..................
 
-.. figure:: images/pdf-broken-table.png
+.. figure:: ../_res/images/pdf-broken-table.png
    :align: center
 
    表の表示崩れ
