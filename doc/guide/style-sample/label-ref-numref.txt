@@ -17,7 +17,7 @@ section_label_ でラベルを参照する。これは文章の任意の場所�
 
 .. _figure_label:
 
-.. figure:: images/sample.png
+.. figure:: ../_res/images/sample.png
    :width: 25%
    :align: center
 

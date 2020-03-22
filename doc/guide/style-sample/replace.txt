@@ -4,7 +4,7 @@
 
 画像 |image| もインラインで埋め込める（使うか？）。
 
-.. |image| image:: images/sample.png
+.. |image| image:: ../_res/images/sample.png
            :width: 10%
 
 ただし、同じファイルのみ。共通で使う場合は、定義をまとめてincludeするとか細工が必要

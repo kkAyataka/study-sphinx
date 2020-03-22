@@ -43,6 +43,7 @@ extensions = [
 
 # PlantUML
 plantuml = f'java -jar {homedir}/.local/bin/plantuml.jar'
+plantuml_output_format = 'svg_img'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -75,7 +76,7 @@ rst_prolog = """
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-html_style = 'css/rtd_custom.css'
+html_style = 'css/rtd-custom.css'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

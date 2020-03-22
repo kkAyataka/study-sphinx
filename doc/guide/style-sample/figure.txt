@@ -1,4 +1,4 @@
-.. figure:: images/sample.png
+.. figure:: ../_res/images/sample.png
    :width: 240
    :align: center
 
