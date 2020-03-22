@@ -23,9 +23,9 @@ https://kkayataka.github.io/study-sphinx
 スクリプト / タスク
 --------------------------------------------------------------------------------
 
-|             項目             |                                内容                                |
-|:-----------------------------|:-------------------------------------------------------------------|
-| [deploy.sh](tools/deploy.sh) | 公開作業のサポートスクリプト                                       |
-| live-server/doc              | ビルドしたHTMLドキュメントの確認用に、Node.jsのlive-serverを動かす |
-| gulp: watch-rst              | *.rstファイルの変更を検知して、build-sphinxを実行する              |
-| gulp: build-sphinx           | HTML形式でビルドする                                               |
+|              項目              |                                内容                                |
+|:-------------------------------|:-------------------------------------------------------------------|
+| [deploy.sh](scripts/deploy.sh) | 公開作業のサポートスクリプト                                       |
+| live-server/doc                | ビルドしたHTMLドキュメントの確認用に、Node.jsのlive-serverを動かす |
+| gulp: watch-rst                | *.rstファイルの変更を検知して、build-sphinxを実行する              |
+| gulp: build-sphinx             | HTML形式でビルドする                                               |
